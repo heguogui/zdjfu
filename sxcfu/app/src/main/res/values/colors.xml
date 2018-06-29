@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBack3">#ff3b3b3b</color>
+    <color name="colorBackPrimary">#333333</color>
+    <color name="translucent_back">#33000000</color>
+    <!--黑色半透明-->
+    <color name="color_dark_transparent">#88333333</color>
+
+    <!-- 半透明00-90 -->
+    <color name="half_transparent">#70000000</color>
+
+    <!--黑色半透明-->
+    <color name="dark_transparent">#33333333</color>
+
+    <!--全透明-->
+    <color name="color_transparent">#00000000</color>
+
+
+    <!--灰色-->
+    <color name="gray">#eeeeee</color>
+    <color name="gray0">#DCDCDC</color>
+    <color name="gray1">#cccccc</color>
+    <color name="gray2">#ffc3c3c3</color>
+    <color name="gray3">#aaaaaa</color>
+    <color name="gray4">#999999</color>
+    <color name="gray5">#ff666666</color>
+    <color name="gray6">#d1d1d1</color>
+    <color name="gray7">#eee</color>
+    <color name="gray8">#f0f0f0</color>
+    <color name="gray9">#9b9b9b</color>
+    <color name="gray10">#62e1e0e0</color>
+    <color name="gray11">#ffe5e5e5</color>
+    <color name="gray12">#ff808080</color>
+    <color name="gray13">#ff9f9f9f</color>
+    <color name="graybg">#f6f6f6</color>
+    <color name="gray14">#F2F2F2</color>
+
+    <!--黑色-->
+    <color name="back0">#909090</color>
+
+
+    <!--蓝色-->
+    <color name="blue">#ffD4ECFF</color>
+    <color name="blue0">#9ccffd</color>
+    <color name="blue1">#64b9fc</color>
+    <color name="blue2">#57c5f7</color>
+    <color name="blue3">#25a7e2</color>
+    <color name="blue4">#2f96ff</color>
+    <color name="blue5">#ff008eff</color>
+    <color name="blue6">#16d8ec</color>
+    <color name="blue7">#17d9eb</color>
+    <color name="blue8">#17d7ec</color>
+    <color name="blue9">#ff5d78e5</color>
+    <color name="blue10">#ff82c0ff</color>
+    <color name="blue11">#ff3865e6</color>
+    <color name="blue12">#ffdbedff</color>
+    <color name="blue13">#ff0491ff</color>
+    <color name="blue14">#1088F1</color>
+
+
+
+
+    <!--金色-->
+    <color name="gold0">#fef4ec</color>
+    <color name="gold1">#fee6c3</color>
+    <color name="gold2">#f5debc</color>
+    <color name="gold3">#f8dcb3</color>
+    <color name="gold4">#e3b26a</color>
+    <color name="gold5">#cc8a28</color>
+    <color name="gold6">#ff8c0a</color>
+    <color name="gold7">#ffb307</color>
+    <color name="gold8">#ff6600</color>
+    <color name="gold9">#ffff9012</color>
+    <color name="gold10">#ffffefdd</color>
+    <color name="gold11">#ffffba00</color>
+    <color name="gold12">#ffff9012</color>
+    <color name="gold13">#FF812D</color>
+
+
+
+
+    <color name="red">#fbd0cc</color>
+    <color name="red0">#ff5d5d</color>
+    <color name="red1">#fe0100</color>
+    <color name="red2">#fa4740</color>
+    <color name="red3">#f02916</color>
+    <color name="red4">#fffa6453</color>
+    <color name="red5">#ffff649e</color>
+    <color name="red6">#fffa6656</color>
+    <color name="red7">#f6634f</color>
+    <color name="red8">#FF5959</color>
+    <color name="red9">#FFEEEE</color>
+
+    <color name="white0">#ffffff</color>
+    <color name="white2">#f2f2f2</color>
+    <color name="white3">#62e1e0e0</color>
+
+
+    <color name="green0">#29b95c</color>
+
+
+
+    <!--我的财富最近投资圆形进度条颜色-->
+   <!-- <color name="account_speed1">#ffa31f</color>
+    <color name="account_speed2">#ebe9e9</color>
+    <color name="account_speed3">#ff9600</color>
+    <color name="account_speed4">#ffb244</color>-->
+
+
+    <!--我的总资产饼图颜色-->
+    <color name="total_assets_10">#ffcf5b</color>
+    <color name="total_assets_2">#48cbb2</color>
+    <color name="total_assets_3">#60e4f8</color>
+    <color name="total_assets_4">#fd7055</color>
+    <color name="total_assets_0">#b6b6b6</color>
+
+    <color name="green1">#ff59bad0</color>
+    <color name="regist_bg">#fceff6</color>
+    <color name="purple">#6F48DE</color>
+
+
+</resources>

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/regist_center_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_105_dip"
+                        android:background="@mipmap/regist_bg"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone"
+                            >
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="17sp"
+                                    android:textColor="#7f5be7"
+                                    android:text="新手就享"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="17sp"
+                                    android:textColor="#ffb02d"
+                                    android:text="3"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="17sp"
+                                    android:textColor="#7f5be7"
+                                    android:text="重礼"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="17sp"
+                                    android:textColor="#7f5be7"
+                                    android:text="过关就赢"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="17sp"
+                                    android:textColor="#ffb02d"
+                                    android:text="6888"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="17sp"
+                                    android:textColor="#7f5be7"
+                                    android:text="元"
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50_dip"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dimen_25_dip"
+                        >
+
+                        <ImageView
+                            android:id="@+id/regist_input_phonenumber_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/phone_normal"
+                            android:layout_centerVertical="true"
+                            />
+
+                        <EditText
+                            android:id="@+id/regist_input_phonenumber_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            style="@style/regist_text"
+                            android:hint="@string/regist_input_phonenumber_hint"
+                            android:inputType="phone"
+                            android:maxLength="11"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/regist_input_phonenumber_iv"
+                            android:digits="0123456789"
+                            />
+                        <RelativeLayout
+                            android:id="@+id/regist_input_phonenumber_rl"
+                            android:layout_width="@dimen/dimen_50_dip"
+                            android:layout_height="@dimen/dimen_50_dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dimen_5_dip"
+                            android:visibility="gone"
+                            >
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/delete"
+                                android:layout_centerInParent="true"
+                                />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/regist_phone_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray2"
+                        android:layout_marginLeft="@dimen/dimen_14_dip"
+                        android:layout_marginRight="@dimen/dimen_14_dip"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50_dip"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dimen_25_dip"
+                        >
+
+                        <ImageView
+                            android:id="@+id/regist_input_code_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/phone_code_normal"
+                            android:layout_centerVertical="true"
+                            />
+
+                        <EditText
+                            android:id="@+id/regist_input_code_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            style="@style/regist_text"
+                            android:hint="@string/regist_code_hint"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/regist_input_code_iv"
+                            android:layout_toLeftOf="@+id/regist_sms_code_line"
+                            />
+
+                        <TextView
+                            android:id="@+id/regist_sms_code_tv"
+                            android:layout_width="@dimen/dimen_80_dip"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="发送验证码"
+                            android:textColor="#ff008eff"
+                            android:textSize="@dimen/common_text_size14"
+                            android:layout_marginRight="@dimen/dimen_15_dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:singleLine="true"
+                            />
+                        
+                        <TextView
+                            android:id="@+id/regist_sms_code_line"
+                            android:layout_width="@dimen/dimen_1_dip"
+                            android:layout_height="@dimen/dimen_11_dip"
+                            android:background="@color/gray2"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dimen_5_dip"
+                            android:layout_toLeftOf="@+id/regist_sms_code_tv"
+                            />
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/regist_code_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray2"
+                        android:layout_marginLeft="@dimen/dimen_14_dip"
+                        android:layout_marginRight="@dimen/dimen_14_dip"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50_dip"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dimen_25_dip"
+                        >
+
+                        <ImageView
+                            android:id="@+id/regist_input_password_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/password_normal"
+                            />
+
+                        <com.hz.zdjfu.application.widget.view.PasswordEditText
+                            android:id="@+id/regist_input_password_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            style="@style/regist_text"
+                            android:hint="@string/regist_password_hint"
+                            android:inputType="textPassword"
+                            android:maxLength="16"
+                            />
+
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/regist_password_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray2"
+                        android:layout_marginLeft="@dimen/dimen_14_dip"
+                        android:layout_marginRight="@dimen/dimen_14_dip"
+                        />
+
+
+                    <LinearLayout
+                        android:id="@+id/regist_invite_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_40_dip"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dimen_25_dip"
+                        >
+
+                        <ImageView
+                            android:id="@+id/regist_invite_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/invest"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/regist_text"
+                            android:textColor="@color/gray2"
+                            android:text="@string/regist_inviter_title"
+                            />
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/regist_input_inviter_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50_dip"
+                        android:gravity="center_vertical"
+                        android:visibility="gone"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="@dimen/dimen_25_dip"
+                            android:gravity="center_vertical"
+                            >
+                            <ImageView
+                                android:id="@+id/regist_input_inviter_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/invest_normal"
+                                />
+
+                            <com.hz.zdjfu.application.widget.view.PasswordEditText
+                                android:id="@+id/regist_input_inviter_et"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="@string/regist_inviter_hint"
+                                style="@style/regist_text"
+
+                                />
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/regist_inviter_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/gray2"
+                            android:layout_marginLeft="@dimen/dimen_14_dip"
+                            android:layout_marginRight="@dimen/dimen_14_dip"
+                            android:layout_alignParentBottom="true"
+                            />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/regist_submit_btn"
+                    style="@style/login_reigster_btn_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/regist_submit_btn"
+                    android:enabled="false"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/dimen_30_dip"
+                    android:layout_below="@+id/regist_center_ll"
+                    android:textColor="@color/white"
+                    />
+
+
+                <RelativeLayout
+                    android:id="@+id/regist_submit_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/regist_submit_btn"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        >
+                        <CheckBox
+                            android:id="@+id/regist_agreement_cb"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/check_selector"
+                            android:button="@null"
+                            />
+                        <TextView
+                            android:id="@+id/regist_agreement_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/gray2"
+                            android:text="@string/regist_agreement_hint"
+                            android:textSize="@dimen/common_text_size11"
+                            android:layout_marginLeft="@dimen/dimen_5_dip"
+                            android:gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_20_dip"
+        android:layout_alignParentBottom="true"
+        >
+        <include layout="@layout/view_shanghaibanksupervise_layout"></include>
+    </LinearLayout>
+
+</RelativeLayout>

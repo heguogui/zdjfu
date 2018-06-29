@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/no_discount_coupon"
+        android:layout_marginTop="@dimen/dimen_170_dip"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_40_dip"
+        android:text="很遗憾,您暂无优惠券"
+        android:textSize="@dimen/common_text_size15"
+        android:textColor="@color/gray13"
+        />
+
+
+
+</LinearLayout>

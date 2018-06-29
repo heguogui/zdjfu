@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/graybg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/redpacketcoupon_ll"
+        android:orientation="vertical"
+        >
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:dividerPadding="10dp"
+            android:divider="@drawable/divider_line"
+            android:showDividers="middle"
+            android:background="@drawable/frame_end_color"
+            android:id="@+id/redpacketcoupon_rg"
+            >
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="红包"
+                android:id="@+id/redpacketcoupon_redpacket_rb"
+                android:button="@null"
+                android:checked="true"
+                android:textSize="@dimen/common_text_size16"
+                android:textColor="@drawable/blue_black_selector"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/gray_white_pressed"
+                android:layout_marginBottom="1dp" />
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="加息券"
+                android:id="@+id/redpacketcoupon_addinterestcoupon_rb"
+                android:button="@null"
+                android:checked="false"
+                android:textSize="@dimen/common_text_size16"
+                android:textColor="@drawable/blue_black_selector"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/gray_white_pressed" />
+
+        </RadioGroup>
+
+        <TableRow
+            android:id="@+id/redpacketcoupon_tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            >
+
+            <ImageView
+                android:id="@+id/redpacketcoupon_cursor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_2_dip"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:src="@color/blue5"
+                android:layout_marginLeft="@dimen/dimen_25_dip"
+                android:layout_marginRight="@dimen/dimen_25_dip" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@null"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/redpacketcoupon_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:flipInterval="30"
+            android:fadingEdge="none"
+            android:persistentDrawingCache="animation"
+            android:layout_gravity="bottom"
+             />
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="#FFE8C1"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正经值余额："
+            android:id="@+id/redpacketcoupon_banlance_title_tv"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_alignBaseline="@+id/redpacketcoupon_banlance_tv"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:textColor="#eb9603" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:id="@+id/redpacketcoupon_banlance_tv"
+            android:layout_toRightOf="@+id/redpacketcoupon_banlance_title_tv"
+            android:textSize="@dimen/common_text_size12"
+            android:layout_centerVertical="true"
+            android:textColor="#eb9603" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 元"
+            android:id="@+id/redpacketcoupon_yuan_tv"
+            android:layout_toRightOf="@+id/redpacketcoupon_banlance_tv"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_alignBaseline="@+id/redpacketcoupon_banlance_tv"
+            android:textColor="#eb9603" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/ic_sxb_look_info"
+            android:id="@+id/redpacketcoupon_help_tv"
+            android:layout_toRightOf="@+id/redpacketcoupon_yuan_tv"
+            android:textColor="@color/colorBack3"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:paddingTop="19dp"
+            android:paddingRight="20dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:text="兑换中心"
+            android:id="@+id/redpacketcoupon_rechange_center_tv"
+            android:textSize="@dimen/common_text_size15"
+            android:layout_centerVertical="true"
+            android:textColor="#ffff9000"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:background="@drawable/stroke_gold_solid_white_radius5"
+            android:layout_marginRight="@dimen/dimen_15_dip"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

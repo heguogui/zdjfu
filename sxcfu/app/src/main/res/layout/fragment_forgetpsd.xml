@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white0"
+    >
+
+
+    <ImageView
+        android:id="@+id/forgetpsd_title_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_35_dip"
+
+        />
+    <TextView
+        android:id="@+id/forgetpsd_zdjf_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBack3"
+        android:text="正道金服"
+        android:textSize="@dimen/common_text_size15"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        android:gravity="center"
+        android:layout_below="@+id/forgetpsd_title_iv"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/forgetpsd_center_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_30_dip"
+        android:layout_below="@+id/forgetpsd_zdjf_iv"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48_dip">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_25_dip"
+
+                >
+
+                <ImageView
+                    android:id="@+id/forgetpsd_input_phone_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/phone_normal"
+                    />
+
+                <EditText
+                    android:id="@+id/forgetpsd_input_phone_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="请输入手机号"
+                    android:inputType="phone"
+                    android:textCursorDrawable="@null"
+                    android:textColorHint="@color/gray2"
+                    android:maxLength="11"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_10_dip"
+                    android:textSize="@dimen/common_text_size14"
+                    android:textColor="@color/colorBack3"
+                    android:singleLine="true"
+                    android:digits="0123456789"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/forgetpsd_input_phonenumber_rl"
+                android:layout_width="@dimen/dimen_50_dip"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_5_dip"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:src="@mipmap/delete"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/forgetpsd_phone_line_tv"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray2"
+            android:layout_marginLeft="@dimen/dimen_14_dip"
+            android:layout_marginRight="@dimen/dimen_14_dip"
+            />
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_25_dip"
+            >
+
+            <ImageView
+                android:id="@+id/forgetpsd_input_code_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/phone_code_normal"
+                android:layout_centerVertical="true"
+                />
+
+            <EditText
+                android:id="@+id/forgetpsd_input_code_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/regist_text"
+                android:hint="@string/regist_code_hint"
+                android:inputType="number"
+                android:maxLength="6"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/forgetpsd_input_code_iv"
+                android:layout_toLeftOf="@+id/forgetpsd_sms_code_line"
+                android:singleLine="true"
+                />
+
+            <TextView
+                android:id="@+id/forgetpsd_sms_code_tv"
+                android:layout_width="@dimen/dimen_80_dip"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="发送验证码"
+                android:textColor="#ff008eff"
+                android:textSize="@dimen/common_text_size14"
+                android:layout_marginRight="@dimen/dimen_15_dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                />
+
+            <TextView
+                android:id="@+id/forgetpsd_sms_code_line"
+                android:layout_width="@dimen/dimen_1_dip"
+                android:layout_height="@dimen/dimen_11_dip"
+                android:background="@color/gray2"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_5_dip"
+                android:layout_toLeftOf="@+id/forgetpsd_sms_code_tv"
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/forgetpsd_code_tv"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray2"
+            android:layout_marginLeft="@dimen/dimen_14_dip"
+            android:layout_marginRight="@dimen/dimen_14_dip"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_25_dip"
+            >
+
+            <ImageView
+                android:id="@+id/forgetpsd_input_password_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/password_normal"
+                />
+
+            <com.hz.zdjfu.application.widget.view.PasswordEditText
+                android:id="@+id/forgetpsd_input_password_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/regist_text"
+                android:hint="@string/forgetpsd_password_hint"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:maxLength="16"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/forgetpsd_password_tv"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray2"
+            android:layout_marginLeft="@dimen/dimen_14_dip"
+            android:layout_marginRight="@dimen/dimen_14_dip"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/forgetpsd_submit_btn"
+        style="@style/login_reigster_btn_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/common_sure"
+        android:enabled="false"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen_50_dip"
+        android:layout_below="@+id/forgetpsd_center_ll"
+        android:textColor="@color/white"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        android:layout_below="@+id/forgetpsd_submit_btn"
+        >
+        <include layout="@layout/view_shanghaibanksupervise_layout"></include>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:id="@+id/scrollview_info"
+            android:background="@color/white0"
+            >
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/graybg">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:background="@color/gray"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invest_detail_top_title"
+                        android:id="@+id/textView113"
+                        android:layout_weight="1"
+                        android:textSize="10dp"
+                        android:textColor="@color/gray5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/invest_detail_top_title_tv"
+                        android:textSize="12dp"
+                        android:textColor="@color/red4" />
+                </TableRow>
+                <include layout="@layout/view_interval_line_item"></include>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white0"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:background="@android:color/transparent"
+                        android:id="@+id/invest_detail_progect_name_tr">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/invest_detail_progect_name"
+                            android:id="@+id/textView116"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorBack3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/invest_detail_progect_name_tv"
+                            android:textSize="12dp"
+                            android:textColor="@color/gray5" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView20"
+                            android:src="@mipmap/next"
+                            android:layout_marginLeft="5dp" />
+                    </TableRow>
+                    <include layout="@layout/view_interval_line_item"></include>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:background="@android:color/transparent"
+                        android:id="@+id/invest_detail_progect_pay_time_tr">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/invest_detail_pay_time"
+                            android:id="@+id/textView120"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorBack3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/invest_detail_progect_pay_time_tv"
+                            android:textSize="12dp"
+                            android:textColor="@color/gray5" />
+
+                    </TableRow>
+                    <include layout="@layout/view_interval_line_item"></include>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:background="@android:color/transparent"
+                        android:layout_marginTop="0.5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/invest_detail_interest"
+                            android:id="@+id/textView124"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorBack3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/invest_detail_interest_tv"
+                            android:textSize="12dp"
+                            android:textColor="@color/red4" />
+                    </TableRow>
+                    <include layout="@layout/view_interval_line_item"></include>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:background="@android:color/transparent"
+                        android:layout_marginTop="0.5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/invest_detail_progect_week"
+                            android:id="@+id/textView59"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorBack3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/invest_detail_progect_week_tv"
+                            android:textSize="12dp"
+                            android:textColor="@color/gray5"
+                            android:paddingRight="5dp" />
+                    </TableRow>
+                    <include layout="@layout/view_interval_line_item"></include>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:background="@android:color/transparent" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="还款方式"
+                            android:id="@+id/textView122"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorBack3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/invest_detail_return_way_tv"
+                            android:textSize="12dp"
+                            android:textColor="@color/gray5"
+                            android:paddingRight="5dp" />
+                    </TableRow>
+                    <include layout="@layout/view_interval_line_item"></include>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:background="@android:color/transparent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/invest_detail_amount"
+                            android:id="@+id/textView126"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorBack3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/invest_detail_amount_tv"
+                            android:textSize="12dp"
+                            android:textColor="@color/gray5"
+                            android:paddingRight="5dp" />
+                    </TableRow>
+                    <include layout="@layout/view_interval_line_item"></include>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:background="@android:color/transparent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/invest_detail_discount"
+                            android:id="@+id/textView140"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorBack3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/invest_detail_discount_tv"
+                            android:textSize="12dp"
+                            android:textColor="@color/gray5"
+                            android:paddingRight="5dp" />
+                    </TableRow>
+                    <include layout="@layout/view_interval_line_item"></include>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:background="@android:color/transparent" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/invest_detail_earning"
+                            android:id="@+id/textView121"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorBack3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/invest_detail_earning_tv"
+                            android:textSize="12dp"
+                            android:textColor="@color/gray5"
+                            android:paddingRight="5dp" />
+                    </TableRow>
+                    <include layout="@layout/view_interval_line_item"></include>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:background="@android:color/transparent"
+                        android:id="@+id/invest_detail_agreement_tr"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="协议书"
+                            android:id="@+id/textView128"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+                            android:textColor="@color/colorBack3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/invest_detail_agreement_tv"
+                            android:textSize="12dp"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView21"
+                            android:src="@mipmap/next"
+                            android:layout_marginLeft="5dp" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:background="@color/gray"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="还款计划"
+                            android:id="@+id/textView130"
+                            android:layout_weight="1"
+                            android:textSize="10dp"
+                            android:textColor="@color/gray4" />
+
+                    </TableRow>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray2"
+                    android:layout_marginBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="1dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        >
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            >
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:text="期数"
+                                android:id="@+id/textView50"
+                                android:textColor="@color/colorBack3"
+                                android:textIsSelectable="false"
+                                android:textSize="12dp"
+                                android:gravity="center_vertical|center"
+                                android:layout_weight="0.5"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="1dp" />
+
+                            <TextView
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:text="还款日"
+                                android:id="@+id/textView51"
+                                android:textColor="@color/colorBack3"
+                                android:textSize="12dp"
+                                android:gravity="center_vertical|center"
+                                android:layout_weight="1"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="1dp" />
+
+                            <TextView
+                                android:layout_width="95dp"
+                                android:layout_height="match_parent"
+                                android:text="金额"
+                                android:id="@+id/textView131"
+                                android:textColor="@color/colorBack3"
+                                android:textSize="12dp"
+                                android:gravity="center_vertical|center"
+                                android:layout_weight="1"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="1dp" />
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:text="状态"
+                                android:id="@+id/textView132"
+                                android:textColor="@color/colorBack3"
+                                android:textSize="12dp"
+                                android:gravity="center_vertical|center"
+                                android:layout_weight="0.5"
+                                android:layout_marginBottom="1dp" />
+
+                        </TableRow>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/investment_recyclerview"
+                            android:background="@color/white0"
+                            android:listSelector="@android:color/transparent" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/txt_no_datas"
+                        android:textSize="10dp"
+                        android:textColor="@color/gray5"
+                        android:text="暂无还款计划"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="10dp"
+                        android:background="@color/white0"
+                        android:visibility="visible"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+

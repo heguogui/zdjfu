@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hz.zdjfu.application.widget.view.DragCustInfoScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/product_detail_scrollView"
+    android:layout_marginTop="@dimen/dimen_5_dip"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_10_dip"
+            android:background="@color/white0"
+            >
+            <TextView
+                android:id="@+id/riskaudit_view1"
+                android:layout_width="@dimen/dimen_5_dip"
+                android:layout_height="@dimen/dimen_15_dip"
+                android:background="@color/green1"
+                android:layout_marginLeft="@dimen/dimen_16_dip"
+                android:layout_marginTop="@dimen/dimen_12_dip"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBack3"
+                android:layout_marginLeft="@dimen/dimen_34_dip"
+                android:layout_marginTop="@dimen/dimen_12_dip"
+                android:textSize="15sp"
+                android:text="财产保障信息"
+                />
+            <TextView
+                android:id="@+id/asset_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBack3"
+                android:layout_marginLeft="@dimen/dimen_34_dip"
+                android:layout_marginRight="@dimen/dimen_17_dip"
+                android:layout_marginTop="@dimen/dimen_24_dip"
+                android:textSize="14sp"
+                android:layout_below="@+id/riskaudit_view1"
+                />
+
+        </RelativeLayout>
+
+        <!--抵押实拍-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_10_dip"
+            android:background="@color/white0"
+            android:layout_marginTop="@dimen/dimen_5_dip"
+            >
+            <TextView
+                android:id="@+id/riskaudit_view2"
+                android:layout_width="@dimen/dimen_5_dip"
+                android:layout_height="@dimen/dimen_15_dip"
+                android:background="@color/green1"
+                android:layout_marginLeft="@dimen/dimen_16_dip"
+                android:layout_marginTop="@dimen/dimen_12_dip"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBack3"
+                android:layout_marginLeft="@dimen/dimen_34_dip"
+                android:layout_marginTop="@dimen/dimen_12_dip"
+                android:textSize="15sp"
+                android:text="抵押实拍"
+                />
+
+            <com.hz.zdjfu.application.widget.view.MyGridView
+                android:id="@+id/riskaudit_pledge_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/riskaudit_view2"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:numColumns="2"
+                >
+            </com.hz.zdjfu.application.widget.view.MyGridView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_10_dip"
+            android:background="@color/white0"
+            android:layout_marginTop="@dimen/dimen_5_dip"
+            >
+            <TextView
+                android:id="@+id/riskaudit_view3"
+                android:layout_width="@dimen/dimen_5_dip"
+                android:layout_height="@dimen/dimen_15_dip"
+                android:background="@color/green1"
+                android:layout_marginLeft="@dimen/dimen_16_dip"
+                android:layout_marginTop="@dimen/dimen_12_dip"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBack3"
+                android:layout_marginLeft="@dimen/dimen_34_dip"
+                android:layout_marginTop="@dimen/dimen_12_dip"
+                android:textSize="15sp"
+                android:text="保障措施"
+                />
+
+            <LinearLayout
+                android:id="@+id/riskaudit_safeguard_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/riskaudit_view3"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/riskaudit_view4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_16_dip"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/business_source"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBack3"
+                            android:layout_marginLeft="@dimen/dimen_5_dip"
+                            android:textSize="14sp"
+                            android:text="业务来源"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/riskaudit_from"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/riskaudit_view4"
+                        android:textSize="13sp"
+                        android:textColor="@color/gray13"
+                        android:layout_marginLeft="@dimen/dimen_34_dip"
+                        android:layout_marginTop="@dimen/dimen_10_dip"
+                        android:layout_marginBottom="@dimen/dimen_5_dip"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/riskaudit_from"
+                        >
+                        <include layout="@layout/view_interval_line_item"></include>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/riskaudit_view5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_16_dip"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/safe_audit"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBack3"
+                            android:layout_marginLeft="@dimen/dimen_5_dip"
+                            android:textSize="14sp"
+                            android:text="风控审核"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/riskaudit_risk_audit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/riskaudit_view5"
+                        android:textSize="13sp"
+                        android:textColor="@color/gray13"
+                        android:layout_marginLeft="@dimen/dimen_34_dip"
+                        android:layout_marginTop="@dimen/dimen_10_dip"
+                        android:layout_marginBottom="@dimen/dimen_5_dip"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/riskaudit_risk_audit"
+                        >
+                        <include layout="@layout/view_interval_line_item"></include>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/riskaudit_view6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_16_dip"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/pledge_manager"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBack3"
+                            android:layout_marginLeft="@dimen/dimen_5_dip"
+                            android:textSize="14sp"
+                            android:text="抵押管理"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/riskaudit_diya_manager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/riskaudit_view6"
+                        android:textSize="13sp"
+                        android:textColor="@color/gray13"
+                        android:layout_marginLeft="@dimen/dimen_34_dip"
+                        android:layout_marginTop="@dimen/dimen_10_dip"
+                        android:layout_marginBottom="@dimen/dimen_5_dip"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/riskaudit_diya_manager"
+                        >
+                        <include layout="@layout/view_interval_line_item"></include>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/riskaudit_view7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_16_dip"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/law_supervise"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBack3"
+                            android:layout_marginLeft="@dimen/dimen_5_dip"
+                            android:textSize="14sp"
+                            android:text="法律监管"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/riskaudit_law_supervise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/riskaudit_view7"
+                        android:textSize="13sp"
+                        android:textColor="@color/gray13"
+                        android:layout_marginLeft="@dimen/dimen_34_dip"
+                        android:layout_marginTop="@dimen/dimen_10_dip"
+                        android:layout_marginBottom="@dimen/dimen_5_dip"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/riskaudit_law_supervise"
+                        >
+                        <include layout="@layout/view_interval_line_item"></include>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/riskaudit_view8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_16_dip"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/capital_supervise"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBack3"
+                            android:layout_marginLeft="@dimen/dimen_5_dip"
+                            android:textSize="14sp"
+                            android:text="资金监管"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/riskaudit_capital_supervise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/riskaudit_view8"
+                        android:textSize="13sp"
+                        android:textColor="@color/gray13"
+                        android:layout_marginLeft="@dimen/dimen_34_dip"
+                        android:layout_marginTop="@dimen/dimen_10_dip"
+                        android:layout_marginBottom="@dimen/dimen_5_dip"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/riskaudit_capital_supervise"
+                        >
+                        <include layout="@layout/view_interval_line_item"></include>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/riskaudit_view9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_16_dip"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/progect_redeem"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBack3"
+                            android:layout_marginLeft="@dimen/dimen_5_dip"
+                            android:textSize="14sp"
+                            android:text="项目赎回"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/riskaudit_object_return"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/riskaudit_view9"
+                        android:textSize="13sp"
+                        android:textColor="@color/gray13"
+                        android:layout_marginLeft="@dimen/dimen_34_dip"
+                        android:layout_marginTop="@dimen/dimen_10_dip"
+                        android:layout_marginBottom="@dimen/dimen_5_dip"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/riskaudit_object_return"
+                        >
+                        <include layout="@layout/view_interval_line_item"></include>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/riskaudit_safeguard_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/riskaudit_view3"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</com.hz.zdjfu.application.widget.view.DragCustInfoScrollView>

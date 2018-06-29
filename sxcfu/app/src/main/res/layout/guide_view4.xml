@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/guide_four" />
+
+    <Button
+        android:id="@+id/btn_enter"
+        android:layout_width="126dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="@dimen/dimen_40_dip"
+        android:background="@drawable/stroke_blue_solid_blue_radius30"
+        android:textColor="@color/white0"
+        android:textSize="16sp"
+        android:padding="@dimen/dimen_5_dip"
+        android:gravity="center"
+        android:text="开启正道之路"
+        />
+
+    <Button
+        android:id="@+id/btn_enter_regist"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="@dimen/dimen_40_dip"
+        android:background="@drawable/blue_radius100"
+        android:textColor="@color/blue5"
+        android:textSize="16sp"
+        android:padding="@dimen/dimen_5_dip"
+        android:gravity="center"
+        android:text="注册"
+        />
+
+</FrameLayout>

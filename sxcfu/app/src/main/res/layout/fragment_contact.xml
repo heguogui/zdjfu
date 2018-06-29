@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35_dip"
+            android:background="@color/gold10"
+            >
+
+            <TextView
+                android:id="@+id/contact_phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/contact_company_phone"
+                android:textColor="@color/gold12"
+                android:textSize="@dimen/common_text_size16"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_17_dip"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/contact_company_time"
+                android:textColor="@color/gold12"
+                android:textSize="@dimen/common_text_size12"
+                android:layout_toRightOf="@+id/contact_phone_tv"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_17_dip"
+                android:gravity="center_vertical"
+                />
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white0"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50_dip">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/common_text_size14"
+                    android:textColor="@color/gray12"
+                    android:text="@string/contact_company_phoneone"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_17_dip"
+                    />
+                <ImageView
+                    android:id="@+id/contact_phone_one_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/phone_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_18_dip"
+                    />
+
+            </RelativeLayout>
+
+            <include layout="@layout/view_interval_line_item"></include>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/common_text_size14"
+                    android:textColor="@color/gray12"
+                    android:text="@string/contact_company_phonetwo"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_17_dip"
+                    />
+                <ImageView
+                    android:id="@+id/contact_phone_two_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/phone_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_18_dip"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dimen_8_dip"
+            android:background="@color/white0"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_70_dip"
+                android:layout_marginLeft="@dimen/dimen_17_dip"
+                >
+
+                <ImageView
+                    android:id="@+id/contact_web_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/zdjf_icon"
+                    android:layout_centerVertical="true"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/contact_web_iv"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/dimen_17_dip"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_company_web_title"
+                        android:textColor="@color/colorBack3"
+                        android:textSize="@dimen/common_text_size16"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_company_web"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/common_text_size13"
+                        android:layout_marginTop="@dimen/dimen_9_dip"
+
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <include layout="@layout/view_interval_line_item"></include>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_70_dip"
+                android:layout_marginLeft="@dimen/dimen_17_dip"
+                >
+
+
+                <ImageView
+                    android:id="@+id/contact_weixin_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/weixin_icon"
+                    android:layout_centerVertical="true"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/contact_weixin_iv"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_17_dip"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_company_weixin_tltle"
+                        android:textColor="@color/colorBack3"
+                        android:textSize="@dimen/common_text_size16"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_company_weixin"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/common_text_size13"
+                        android:layout_marginTop="@dimen/dimen_9_dip"
+
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <include layout="@layout/view_interval_line_item"></include>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_70_dip"
+                android:layout_marginLeft="@dimen/dimen_17_dip"
+                android:visibility="gone"
+                >
+
+
+                <ImageView
+                    android:id="@+id/contact_qq_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/qq_icon"
+                    android:layout_centerVertical="true"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/contact_qq_iv"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_17_dip"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_company_qq_tltle"
+                        android:textColor="@color/colorBack3"
+                        android:textSize="@dimen/common_text_size16"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_company_qq_number"
+                        android:textColor="@color/gray3"
+                        android:textSize="@dimen/common_text_size13"
+                        android:layout_marginTop="@dimen/dimen_9_dip"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_company_name"
+        android:textSize="@dimen/common_text_size10"
+        android:textColor="@color/blue5"
+        android:gravity="center"
+        android:layout_above="@+id/contact_company_address_tv"
+        android:layout_marginBottom="@dimen/dimen_10_dip"
+    />
+    <TextView
+        android:id="@+id/contact_company_address_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_company_address"
+        android:textSize="@dimen/common_text_size10"
+        android:textColor="@color/gray3"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_18_dip"
+        />
+
+
+</RelativeLayout>

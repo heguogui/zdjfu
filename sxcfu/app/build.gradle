@@ -1,0 +1,366 @@
+apply plugin: 'com.android.application'
+
+// retrolambda
+//apply plugin: 'me.tatarka.retrolambda'
+
+// realm
+apply plugin: 'realm-android'
+
+// 设置编译时间
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId "com.hz.zdjfu.application"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 122
+        versionName "1.2.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi',"x86"//, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+
+        flavorDimensions "versionCode"
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    signingConfigs {
+
+        debug {
+            storeFile file("zdjfu_2016.jks")
+            keyAlias RELASE_KEYALIAS
+            keyPassword RELASE_KEYPASSWORD
+            storeFile file(RELASE_KEYFILE)
+            storePassword RELASE_KEYPASSWORD
+            v2SigningEnabled false // 关闭v2签名，针对7.0+手机
+        }
+        relase_config {
+            storeFile file("zdjfu_2016.jks")
+            keyAlias RELASE_KEYALIAS
+            keyPassword RELASE_KEYPASSWORD
+            storeFile file(RELASE_KEYFILE)
+            storePassword RELASE_KEYPASSWORD
+            v2SigningEnabled false // 关闭v2签名，针对7.0+手机
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.relase_config
+            zipAlignEnabled true
+            debuggable false
+        }
+    }
+
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+//    lintOptions {
+//        abortOnError false//lint时候终止错误上报,防止编译的时候莫名的失败
+//    }
+
+    // 打包
+    productFlavors {
+
+        zdjfu {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        wandoujia {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        c360 {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        tencentYyb {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        baidu {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+        sogou {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+        pp {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        oppo {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        xiaomi {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        vivo {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        huawei {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        lenovo {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        meizu {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        diank {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        diankai2 {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        mmy_zd_1 {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        quanm_zdjf {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        chenku {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        zhongyi_zd {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        baofeng {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        zdjfu360 {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        toutiao{
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        mshk{
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        feipao{
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        qianke{
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        duobei{
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        lebai{
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        zhongyi{
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        aifengwo{
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        zhangzuanbao{
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        szcb{
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+        tuia{
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.hz.zdjfu.application"]
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "strKey", "releaseValue")
+        }
+
+
+        productFlavors.all { flavor ->
+            flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+        }
+    }
+
+
+    // gradle 修改生成的apk的名字
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "${variant.productFlavors[0].name}_${defaultConfig.versionCode}_${defaultConfig.versionName}_${releaseTime() }.apk"
+        }
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    androidTestCompile  'junit:junit:4.12'
+    // material design
+    implementation 'com.android.support:design:26.+'
+    // multidex
+    implementation  'com.android.support:multidex:1.0.2'
+   // implementation files('libs/android-support-multidex-1.0.2.jar')
+    // eventbus
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    // butterknife
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    // glide
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    // glide transformation
+    implementation 'jp.wasabeef:glide-transformations:2.0.1'
+    // retrofit2.0
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
+    // okhttp3.0
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+    // rxjava rxandroid
+    implementation 'io.reactivex:rxjava:1.2.7'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    // logger
+    implementation 'com.orhanobut:logger:1.15'
+    // bugly
+    implementation 'com.tencent.bugly:crashreport:2.1.5'
+    // convenientbanner
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    // rxpermission
+    implementation 'com.tbruyelle.rxpermissions:rxpermissions:0.9.2@aar'
+    // BaseRecyclerViewAdapterHelper
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.3'
+    // stetho
+    implementation 'com.facebook.stetho:stetho:1.4.2'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.4.2'
+    implementation 'com.uphyca:stetho_realm:2.0.0'
+    //sweet dialog
+//    compile 'cn.pedant.sweetalert:library:1.3'
+    implementation 'com.github.cazaea:sweet-alert-dialog:1.0.0'
+    //city selector
+    implementation 'liji.library.dev:citypickerview:1.1.0'
+    // PhotoView
+    implementation 'com.github.chrisbanes.photoview:library:1.2.4'
+    //refresh
+    implementation 'com.huxq17.xrefreshview:xrefreshview:3.6.9'
+    implementation 'com.jcodecraeer:xrecyclerview:1.3.2'
+    // convenientbanner
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    implementation files('libs/ShareSDK-Core-2.8.3.jar')
+    implementation files('libs/libammsdk.jar')
+
+    // updateplugin
+    implementation 'org.lzh.nonview.updateplugin:UpdatePlugin:2.0'
+
+    //bugly
+    implementation 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+
+    //友盟
+    implementation 'com.umeng.analytics:analytics:latest.integration'
+
+}

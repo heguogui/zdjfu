@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:layout_marginTop="@dimen/dimen_7_dip"
+    android:layout_marginLeft="@dimen/dimen_15_dip"
+    android:layout_marginRight="@dimen/dimen_15_dip"
+    >
+
+    <RelativeLayout
+        android:id="@+id/redpacketcoupon_discounts_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/redpacket_coupon_red_bg"
+        >
+
+        <LinearLayout
+            android:id="@+id/redpacketcoupon_discounts_number_ll"
+            android:layout_width="@dimen/dimen_88_dip"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_20_dip"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_25_dip"
+                android:text="¥"
+                android:textColor="@color/red4"
+                android:textSize="@dimen/common_text_size12"
+                android:layout_alignBottom="@+id/redpacketcoupon_discounts_number_tv"
+                android:gravity="bottom"
+                android:layout_marginTop="@dimen/dimen_3_dip"
+                android:id="@+id/redpacketcoupon_discounts_danwei_tv"
+                />
+            <TextView
+                android:id="@+id/redpacketcoupon_discounts_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textColor="@color/red4"
+                android:text="0"
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/redpacketcoupon_tag_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_text_size12"
+            android:textColor="@color/red4"
+            android:layout_below="@+id/redpacketcoupon_discounts_number_ll"
+            android:layout_marginTop="@dimen/dimen_2_dip"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/redpacketcoupon_discounts_rl"
+        android:background="@mipmap/redpack_coupon_white_bg"
+        >
+        <TextView
+            android:id="@+id/redpacketcoupon_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_text_size15"
+            android:layout_marginTop="@dimen/dimen_14_dip"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:textColor="@color/colorBack3"
+            />
+        <TextView
+            android:id="@+id/redpacketcoupon_day_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_text_size12"
+            android:layout_marginTop="@dimen/dimen_5_dip"
+            android:layout_marginLeft="@dimen/dimen_14_dip"
+            android:textColor="@color/gray13"
+            android:layout_below="@+id/redpacketcoupon_name_tv"
+
+            />
+
+        <View
+            android:id="@+id/redpacketcoupon_line_tv"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/shape_gray_stroke"
+            android:layerType="software"
+            android:layout_below="@+id/redpacketcoupon_day_tv"
+            android:layout_marginTop="@dimen/dimen_8_dip"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            />
+
+        <TextView
+            android:id="@+id/redpacketcoupon_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_text_size11"
+            android:layout_marginTop="@dimen/dimen_5_dip"
+            android:layout_marginLeft="@dimen/dimen_14_dip"
+            android:textColor="@color/gray3"
+            android:layout_below="@+id/redpacketcoupon_line_tv"
+            />
+
+
+        <ImageView
+            android:id="@+id/redpacketcoupon_state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_8_dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_12_dip"
+            />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/zt_coupon_out_time_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/outing_time_iv"
+        />
+
+</RelativeLayout>

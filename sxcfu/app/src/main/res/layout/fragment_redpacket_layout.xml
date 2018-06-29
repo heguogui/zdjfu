@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andview.refreshview.XRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xrefreshview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xrefreshview:autoRefresh="false"
+    android:id="@+id/redpacket_refreshview"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/redpacket_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</com.andview.refreshview.XRefreshView>

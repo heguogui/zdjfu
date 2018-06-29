@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graybg"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_160_dip"
+        android:background="#FEF1F0"
+        >
+
+        <ImageView
+            android:id="@+id/rechange_success_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/rechange_success"
+            android:layout_centerInParent="true"
+            />
+        <TextView
+            android:id="@+id/rechange_success_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rechange_success_iv"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:textColor="#ffff6161"
+            android:layout_marginTop="@dimen/dimen_25_dip"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_46_dip"
+        android:background="@color/white0"
+        android:layout_marginTop="@dimen/dimen_7_dip"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="账户余额(元)"
+            android:textSize="@dimen/common_text_size15"
+            android:textColor="@color/colorBack3"
+            android:layout_marginLeft="@dimen/dimen_14_dip"
+
+            />
+
+        <TextView
+            android:id="@+id/rechange_success_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:textSize="@dimen/common_text_size15"
+            android:textColor="@color/colorBack3"
+            android:layout_marginRight="@dimen/dimen_14_dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="¥0.00"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_85_dip"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dimen_42_dip"
+            android:gravity="center_vertical|right"
+            >
+            <TextView
+                android:id="@+id/rechange_success_sure"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/blue5"
+                android:textSize="16sp"
+                android:text="@string/common_sure"
+                android:layout_marginRight="@dimen/dimen_14_dip"
+                android:background="@drawable/stroke_blue_solid_white_radius5"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dimen_42_dip">
+            <TextView
+                android:id="@+id/rechange_success_goinvite"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white0"
+                android:textSize="16sp"
+                android:text="去投资"
+                android:layout_marginLeft="14sp"
+                android:background="@drawable/stroke_white_solid_blue_radius5"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

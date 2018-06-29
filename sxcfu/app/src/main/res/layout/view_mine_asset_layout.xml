@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/blue5"
+        android:paddingBottom="@dimen/dimen_11_dip"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/mine_all_asset_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+
+
+            <TextView
+                android:id="@+id/mine_all_asset_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white0"
+                android:text="0.00"
+                android:textSize="36sp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_25_dip"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_2_dip"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white3"
+                        android:text="@string/mine_all_assets_tv"
+                        android:textSize="@dimen/common_text_size12"
+                        android:gravity="center_vertical"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/go_go"
+                        android:layout_marginLeft="@dimen/dimen_2_dip"
+                        />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        
+       <RelativeLayout
+           android:id="@+id/mine_openbankaccount_rl"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:visibility="gone"
+           android:layout_marginTop="@dimen/dimen_55_dip"
+           >
+
+           <TextView
+               android:layout_width="@dimen/dimen_160_dip"
+               android:layout_height="@dimen/dimen_33_dip"
+               android:background="@drawable/stroke_white_solid_blue_radius5"
+               android:layout_centerInParent="true"
+               android:textColor="@color/white0"
+               android:textSize="@dimen/common_text_size16"
+               android:text="开通存管 安享收益"
+               android:gravity="center"
+               />
+           
+       </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_45_dip"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/mine_all_earnings_number_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="@color/white0"
+                    android:textSize="@dimen/common_text_size18"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_all_earnings_tv"
+                    android:textColor="@color/white3"
+                    android:textSize="@dimen/common_text_size12"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/mine_duein_moneys_number_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="@color/white0"
+                    android:textSize="@dimen/common_text_size18"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_duein_moneys_tv"
+                    android:textColor="@color/white3"
+                    android:textSize="@dimen/common_text_size12"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_65_dip"
+        android:background="@color/white0"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dimen_20_dip"
+            android:layout_centerVertical="true"
+            >
+            <TextView
+                android:id="@+id/mine_account_banlance_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBack3"
+                android:textSize="@dimen/common_text_size18"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_account_banlance_tv"
+                android:textColor="@color/gray3"
+                android:textSize="@dimen/common_text_size12"
+                android:layout_marginTop="@dimen/dimen_3_dip"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/withdraw_deposit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_5_dip"
+            android:paddingBottom="@dimen/dimen_5_dip"
+            android:paddingLeft="@dimen/dimen_10_dip"
+            android:paddingRight="@dimen/dimen_10_dip"
+            android:gravity="center"
+            android:text="@string/mine_withdraw_deposit_tv"
+            android:textColor="@color/colorBack3"
+            android:layout_toLeftOf="@+id/mine_code_line"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:textSize="@dimen/common_text_size15"
+            />
+
+        <TextView
+            android:id="@+id/mine_recharge_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_5_dip"
+            android:paddingBottom="@dimen/dimen_5_dip"
+            android:paddingLeft="@dimen/dimen_10_dip"
+            android:paddingRight="@dimen/dimen_10_dip"
+            android:gravity="center"
+            android:text="@string/mine_recharge_tv"
+            android:textColor="@color/blue5"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/common_text_size15"
+            />
+
+        <TextView
+            android:id="@+id/mine_code_line"
+            android:layout_width="@dimen/dimen_1_dip"
+            android:layout_height="@dimen/dimen_15_dip"
+            android:background="@color/gray1"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_5_dip"
+            android:layout_toLeftOf="@+id/mine_recharge_tv"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

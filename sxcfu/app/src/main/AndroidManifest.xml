@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hz.zdjfu.application"
+    android:installLocation="auto"
+    >
+    <!-- 基本权限 -->
+
+    <permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <permission  android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        tools:replace="android:allowBackup,android:icon"
+        android:theme="@style/AppTheme"
+        android:name="com.hz.zdjfu.application.base.ZDJFUApplication"
+        >
+        <activity android:name="com.hz.zdjfu.application.modle.login.splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppSplash"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.hz.zdjfu.application.modle.MainActivity"
+            android:launchMode="singleTask"
+            />
+        <activity android:name="com.hz.zdjfu.application.modle.login.welcome.WelcomeActivity"/>
+        <activity android:name="com.hz.zdjfu.application.widget.webview.WebViewActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            ></activity>
+        <activity android:name="com.hz.zdjfu.application.modle.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        <activity android:name="com.hz.zdjfu.application.modle.login.regist.RegistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        <activity android:name="com.hz.zdjfu.application.modle.mine.returnedmoneycalendar.RMCalendarActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.message.MessageActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.personcenter.PersonCenterActivity"
+            android:launchMode="singleTask"
+            />
+        <activity android:name="com.hz.zdjfu.application.modle.mine.personcenter.setting.SettingActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.personcenter.setting.ContactActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.personcenter.persondetail.PersonDetailActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.personcenter.updatenick.UpdateNickActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.personcenter.bankcardmanager.BankCardActivity"
+            android:launchMode="singleTask"
+            />
+        <activity android:name="com.hz.zdjfu.application.modle.mine.personcenter.updateloginpsd.UpdateLoginPsdActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.personcenter.forgetpsd.ForgetPsdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        <activity android:name="com.hz.zdjfu.application.modle.getturepwd.CreateGesturePwdActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.getturepwd.UnlockGesturePwdActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.redpacketcoupon.RedpacketCouponActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.myinvest.MyInvestActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.myasset.MyAssetActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.transationdetail.TransationdetailActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.personcenter.openshanghaibankaccount.OpenSHBankAccountActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.personcenter.bankcardmanager.unbindbankcard.UnbindBankCardActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.personcenter.bankcardmanager.addbankcard.AddBankCardActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.personcenter.withdrawdeposit.WithDrawDepositActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.invitefriend.InviteFriendActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.invitefriend.invitereword.InviteRewordActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.party.partycenter.PartyCenterActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.party.oldparty.OldPartyActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.party.noobcontest.NoobContestActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.rechangecenter.rechangedetail.RechangeDetailActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.rechangecenter.RechangeCenterActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.personcenter.paypwdmanager.PayPwdManagerActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.rechange.RechangeActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.rechange.rechangehelp.RechangeHelpActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.rechange.rechangesuccess.RechangeSuccessActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.personcenter.withdrawdeposit.applycsuccess.ApplySuccessActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.product.productdetail.ProductDetailActivity"
+            android:launchMode="singleTask"
+            ></activity>
+        <activity android:name="com.hz.zdjfu.application.modle.invest.InvestRewordActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.mine.message.messagedetail.MessageDetailActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.invest.invest.InvestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            ></activity>
+        <activity android:name=".widget.webview.SpecialWebViewActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            ></activity>
+        <activity android:name="com.hz.zdjfu.application.modle.invest.investdetail.InvestDetailActivity"></activity>
+        <activity android:name="com.hz.zdjfu.application.modle.discount.DiscountActivity"></activity>
+        <activity android:name="com.hz.zdjfu.application.modle.product.returnmoneyplay.ReturnMoneyPlayActivity"></activity>
+        <activity android:name="com.hz.zdjfu.application.modle.party.announcementlist.AnnouncementListActivity"/>
+        <activity android:name="com.hz.zdjfu.application.modle.party.announcementdetail.AnnouncementDetailActivity"></activity>
+        <activity android:name="com.hz.zdjfu.application.modle.image.LookImagesDisplayActivity"></activity>
+        <activity android:name=".modle.opendeposit.OpenDepositActivity"></activity>
+        <activity android:name=".modle.performancelist.PerformanceActivity"></activity>
+        <activity android:name=".modle.ztprogect.ZTProductDetailActivity"
+            android:launchMode="singleTask"
+            ></activity>
+        <activity android:name=".modle.ztprogect.invest.ZTInvestRewordActivity"></activity>
+        <activity android:name=".modle.ztprogect.zhitoulist.ZTProductListActivity"></activity>
+        <activity android:name=".modle.ztprogect.investamount.InvestAmountActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            ></activity>
+        <activity android:name=".modle.ztprogect.discount.ZTDiscountActivity"></activity>
+        <activity android:name=".modle.ztprogect.invest.buyproductdetail.ZTBuyProductDetailActivity"
+            android:launchMode="singleTask"
+            ></activity>
+
+
+        <!--微信分享回调-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <!-- 解决 Android N 上 安装Apk时报错 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.hz.zdjfu.application"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}">
+        </meta-data>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5833fbc5310c932b20001740">
+
+        </meta-data>
+
+
+    </application>
+
+    <!--当前的Android程序就支持了多种分辨率，那么就可以得到正确的物理尺寸了。-->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        />
+
+</manifest>

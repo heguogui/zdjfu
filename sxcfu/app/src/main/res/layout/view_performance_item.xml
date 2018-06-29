@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/performance_item_main"
+    >
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/stroke_gray_solid_white_radius5"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/performance_item_head_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40_dip"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:layout_marginTop="@dimen/dimen_12_dip"
+            >
+
+            <ImageView
+                android:id="@+id/performance_item_head"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/ic_list_defualt_bg"
+                android:layout_centerVertical="true"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/performance_item_head"
+
+                >
+
+                <TextView
+                    android:id="@+id/performance_item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_9_dip"
+                    android:textColor="@color/colorBack3"
+                    android:textSize="@dimen/common_text_size15"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/performance_item_isfrish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    android:textColor="@color/white0"
+                    android:textSize="@dimen/common_text_size11"
+                    android:paddingTop="@dimen/dimen_2_dip"
+                    android:paddingBottom="@dimen/dimen_2_dip"
+                    android:paddingLeft="@dimen/dimen_10_dip"
+                    android:paddingRight="@dimen/dimen_10_dip"
+                    android:gravity="center"
+                    android:text="新手"
+                    android:background="@mipmap/type_bg"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/performance_item_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    android:textColor="@color/blue5"
+                    android:textSize="@dimen/common_text_size11"
+                    android:paddingTop="@dimen/dimen_2_dip"
+                    android:paddingBottom="@dimen/dimen_2_dip"
+                    android:paddingLeft="@dimen/dimen_10_dip"
+                    android:paddingRight="@dimen/dimen_10_dip"
+                    android:gravity="center"
+                    android:background="@drawable/shape_blue_radius_30_btn"
+                    android:visibility="gone"
+                    />
+
+
+
+            </LinearLayout>
+
+            
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/performance_item_earnings_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40_dip"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimen_55_dip"
+                >
+                <TextView
+                    android:id="@+id/performance_item_earnings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="30sp"
+                    android:textColor="@color/red4"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="bottom"
+                    android:text="0.00"
+                    />
+                <TextView
+                    android:id="@+id/performance_item_earnings_dw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+                    android:textColor="@color/red4"
+                    android:text="%"
+                    android:layout_toRightOf="@+id/performance_item_earnings"
+                    android:layout_alignBottom="@+id/performance_item_earnings"
+                    android:paddingBottom="@dimen/dimen_5_dip"
+                    android:gravity="bottom"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/performance_item_earnings_fillrates_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/performance_item_earnings"
+                    android:layout_toRightOf="@+id/performance_item_earnings_dw"
+                    >
+
+                    <TextView
+                        android:id="@+id/performance_item_earnings_fillrates"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="12sp"
+                        android:textColor="@color/red4"
+                        android:text="+0.00"
+                        android:gravity="bottom"
+                        android:paddingBottom="@dimen/dimen_5_dip"
+                        />
+                    <TextView
+                        android:id="@+id/performance_item_earnings_fillrates_dw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="12sp"
+                        android:textColor="@color/red4"
+                        android:layout_alignBottom="@+id/performance_item_earnings_fillrates"
+                        android:layout_toRightOf="@+id/performance_item_earnings_fillrates"
+                        android:text="%"
+                        android:gravity="bottom"
+                        android:paddingBottom="@dimen/dimen_5_dip"
+                        />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_toRightOf="@+id/performance_item_earnings_fillrates_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray1"
+                    android:text="@string/financial_item_earnings"
+                    android:paddingBottom="@dimen/dimen_5_dip"
+                    android:gravity="bottom"
+                    />
+
+                <TextView
+                    android:id="@+id/performance_item_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="30sp"
+                    android:textColor="@color/colorBack3"
+                    android:layout_marginLeft="@dimen/dimen_180_dip"
+                    android:text="799"
+                    android:gravity="bottom"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray1"
+                    android:layout_toRightOf="@+id/performance_item_data"
+                    android:text="天"
+                    android:layout_alignBottom="@+id/performance_item_data"
+                    android:paddingBottom="@dimen/dimen_5_dip"
+                    android:gravity="bottom"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:layout_width="@dimen/dimen_60_dip"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:id="@+id/performance_item_other_iv"
+            android:layout_marginTop="@dimen/dimen_30_dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15_dip"
+            android:enabled="false"
+            android:src="@mipmap/lvyuezhong"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_105_dip"
+            >
+            <include layout="@layout/view_line_item"></include>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_12_dip"
+            >
+
+            <TextView
+                android:id="@+id/performance_item_amount_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/gray1"
+                android:text="@string/financial_item_amount"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/performance_item_amount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorBack3"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

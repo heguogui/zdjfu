@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        >
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/view_item_return_num"
+            android:textColor="@color/colorBack3"
+            android:textIsSelectable="false"
+            android:textSize="12dp"
+            android:gravity="center_vertical|center"
+            android:layout_weight="0.5"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp" />
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:id="@+id/view_item_return_time"
+            android:textColor="@color/colorBack3"
+            android:textSize="12dp"
+            android:gravity="center_vertical|center"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp" />
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:id="@+id/view_item_return_amount"
+            android:textColor="@color/colorBack3"
+            android:textSize="12dp"
+            android:gravity="center_vertical|center"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/view_item_return_state"
+            android:textColor="@color/colorBack3"
+            android:textSize="12dp"
+            android:gravity="center_vertical|center"
+            android:layout_weight="0.5"
+            android:layout_marginBottom="1dp" />
+
+    </TableRow>
+    <include layout="@layout/view_interval_line_item"></include>
+
+
+</LinearLayout>

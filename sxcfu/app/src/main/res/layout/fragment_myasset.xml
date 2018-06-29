@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graybg"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/graybg"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@color/white0"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                <LinearLayout
+                    android:id="@+id/myasset_all_asset_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:id="@+id/myasset_all_asset_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/common_text_size25"
+                        android:textColor="@color/red4"
+                        android:gravity="center"
+                        android:text="¥0.00"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/common_text_size12"
+                        android:textColor="@color/gray12"
+                        android:gravity="bottom"
+                        android:text="元"
+                        />
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/myasset_piechart_noempty_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/white0"
+                        android:layout_marginTop="@dimen/dimen_5_dip"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/dimen_160_dip"
+                            >
+                            <com.github.mikephil.charting.charts.PieChart
+                                android:id="@+id/myasset_piechart"
+                                android:layout_width="@dimen/dimen_160_dip"
+                                android:layout_height="@dimen/dimen_160_dip"
+                                android:layout_marginLeft="@dimen/dimen_15_dip"
+                                >
+
+                            </com.github.mikephil.charting.charts.PieChart>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/dimen_160_dip"
+                            android:gravity="center_vertical"
+                            android:visibility="visible"
+                            android:paddingLeft="@dimen/dimen_35_dip"
+                            android:orientation="vertical"
+                            >
+
+                            <RelativeLayout
+                                android:id="@+id/myasset_all_accountbalance_ll"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/myasset_all_accountbalance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="center_vertical"
+                                    >
+                                    <TextView
+                                        android:id="@+id/myasset_all_accountbalance_iv"
+                                        android:layout_width="@dimen/dimen_12_dip"
+                                        android:layout_height="@dimen/dimen_12_dip"
+                                        android:background="@color/blue9"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/myasset_all_accountbalance_tv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/colorBack3"
+                                        android:textSize="@dimen/common_text_size15"
+                                        android:layout_marginLeft="@dimen/dimen_5_dip"
+                                        />
+
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/myasset_use_balance"
+                                    android:textSize="@dimen/common_text_size11"
+                                    android:layout_marginTop="@dimen/dimen_2_dip"
+                                    android:textColor="@color/gray13"
+                                    android:layout_below="@+id/myasset_all_accountbalance"
+                                    android:layout_marginLeft="@dimen/dimen_20_dip"
+                                    />
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/myasset_all_pend_withdraw_ll"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/myasset_all_pend_withdraw"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="center_vertical"
+                                    >
+                                    <TextView
+                                        android:id="@+id/myasset_all_pend_withdraw_iv"
+                                        android:layout_width="@dimen/dimen_12_dip"
+                                        android:layout_height="@dimen/dimen_12_dip"
+                                        android:background="@color/blue5"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/myasset_all_pend_withdraw_tv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/colorBack3"
+                                        android:textSize="@dimen/common_text_size15"
+                                        android:layout_marginLeft="@dimen/dimen_5_dip"
+                                        />
+
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/myasset_freeze_amount"
+                                    android:textSize="@dimen/common_text_size11"
+                                    android:layout_marginTop="@dimen/dimen_2_dip"
+                                    android:textColor="@color/gray13"
+                                    android:layout_below="@+id/myasset_all_pend_withdraw"
+                                    android:layout_marginLeft="@dimen/dimen_20_dip"
+                                    />
+
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/myasset_all_pend_return_ll"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                >
+
+
+                                <LinearLayout
+                                    android:id="@+id/myasset_all_pend_return"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="center_vertical"
+                                    >
+                                    <TextView
+                                        android:id="@+id/myasset_all_pend_return_iv"
+                                        android:layout_width="@dimen/dimen_12_dip"
+                                        android:layout_height="@dimen/dimen_12_dip"
+                                        android:background="@color/red5"
+                                        />
+                                    <TextView
+                                        android:id="@+id/myasset_all_pend_return_tv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/colorBack3"
+                                        android:textSize="@dimen/common_text_size15"
+                                        android:layout_marginLeft="@dimen/dimen_5_dip"
+                                        />
+
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/myasset_wait_back"
+                                    android:textSize="@dimen/common_text_size11"
+                                    android:layout_marginTop="@dimen/dimen_2_dip"
+                                    android:textColor="@color/gray13"
+                                    android:layout_below="@+id/myasset_all_pend_return"
+                                    android:layout_marginLeft="@dimen/dimen_20_dip"
+                                    />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/myasset_piechart_empty_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_160_dip"
+                    android:background="@color/white0"
+                    android:layout_marginTop="@dimen/dimen_15_dip"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    >
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/myasset_piechart_empty"
+                        android:layout_width="@dimen/dimen_160_dip"
+                        android:layout_height="@dimen/dimen_160_dip"
+                        android:layout_centerInParent="true"
+                        >
+
+                    </com.github.mikephil.charting.charts.PieChart>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="¥0.00元"
+                        android:textColor="#ff858484"
+                        android:textSize="@dimen/common_text_size19"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/myasset_transaction_detail_tv"
+                    android:layout_width="@dimen/dimen_270_dip"
+                    android:layout_height="@dimen/dimen_35_dip"
+                    android:background="@drawable/shape_blue_radius_30_btn"
+                    android:layout_marginLeft="@dimen/dimen_50_dip"
+                    android:layout_marginRight="@dimen/dimen_50_dip"
+                    android:text="@string/myasset_transaction_detail"
+                    android:textColor="@color/blue5"
+                    android:textSize="@dimen/common_text_size14"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/dimen_5_dip"
+                    android:layout_marginTop="@dimen/dimen_20_dip"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5_dip"
+                >
+                <include layout="@layout/view_myasset_all_item_layout"></include>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_10_dip"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            >
+            <TextView
+                android:id="@+id/myasset_registtime_totalday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/back0"
+                android:textSize="@dimen/common_text_size10"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/myasset_registtime_one"
+                android:layout_width="@dimen/dimen_12_dip"
+                android:layout_height="@dimen/dimen_15_dip"
+                android:textColor="@color/blue5"
+                android:textSize="@dimen/common_text_size10"
+                android:gravity="center"
+                android:background="@drawable/stroke_gray_solid_white"
+                />
+            <TextView
+                android:id="@+id/myasset_registtime_two"
+                android:layout_width="@dimen/dimen_12_dip"
+                android:layout_height="@dimen/dimen_15_dip"
+                android:textColor="@color/blue5"
+                android:textSize="@dimen/common_text_size10"
+                android:gravity="center"
+                android:background="@drawable/stroke_gray_solid_white"
+                />
+            <TextView
+                android:id="@+id/myasset_registtime_three"
+                android:layout_width="@dimen/dimen_12_dip"
+                android:layout_height="@dimen/dimen_15_dip"
+                android:textColor="@color/blue5"
+                android:textSize="@dimen/common_text_size10"
+                android:gravity="center"
+                android:background="@drawable/stroke_gray_solid_white"
+                />
+            <TextView
+                android:id="@+id/myasset_registtime_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/back0"
+                android:textSize="@dimen/common_text_size10"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/dimen_5_dip"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

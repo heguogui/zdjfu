@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/webview_bottom_rl"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <com.hz.zdjfu.application.widget.webview.BBWebCore
+                            android:id="@+id/webview"
+                            android:fitsSystemWindows="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progress_bar_color" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/webview_bottom_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_50_dip"
+                android:layout_alignParentBottom="true"
+                android:background="#ffdec8"
+                >
+
+                <TextView
+                    android:id="@+id/webview_integral_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分：44"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    android:textColor="#ff6501"
+                    android:textSize="@dimen/common_text_size16"
+                    />
+
+                <TextView
+                    android:id="@+id/webview_integral_detail_btn"
+                    android:layout_width="@dimen/dimen_100_dip"
+                    android:layout_height="@dimen/dimen_30_dip"
+                    android:background="@drawable/stroke_blue_solid_trans_radius5"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_15_dip"
+                    android:textColor="#ff6501"
+                    android:textSize="@dimen/common_text_size16"
+                    android:text="查看明细"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/earningdetail_network_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone"
+
+            >
+
+            <ImageView
+                android:id="@+id/earningdetail_network_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/earningdetail_network_iv"
+                android:layout_centerHorizontal="true"
+                android:text="@string/common_net_error"
+                android:textColor="@color/gray5"
+                android:textSize="@dimen/common_text_size14"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:lineSpacingMultiplier="1.2" />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

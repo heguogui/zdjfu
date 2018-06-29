@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graybg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/paypwdmanager_callback_phone_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:background="@color/white0"
+        android:layout_marginTop="@dimen/dimen_7_dip"
+        >
+        <TextView
+           style="@style/paypwdmanager_text"
+            android:text="@string/paypwdmanager_callback_phone_title"
+            />
+        <include layout="@layout/view_go_view_layout"></include>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white0"
+        android:layout_marginTop="@dimen/dimen_7_dip"
+        >
+        <RelativeLayout
+            android:id="@+id/paypwdmanager_update_pwd_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:background="@color/white0"
+            >
+            <TextView
+                style="@style/paypwdmanager_text"
+                android:text="@string/paypwdmanager_update_pwd_title"
+                />
+            <include layout="@layout/view_go_view_layout"></include>
+        </RelativeLayout>
+
+        <include layout="@layout/view_interval_line_item"></include>
+
+        <RelativeLayout
+            android:id="@+id/paypwdmanager_forget_pwd_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:background="@color/white0"
+            >
+            <TextView
+                style="@style/paypwdmanager_text"
+                android:text="@string/paypwdmanager_forget_pwd_title"
+                />
+            <include layout="@layout/view_go_view_layout"></include>
+        </RelativeLayout>
+        <include layout="@layout/view_interval_line_item"></include>
+        <RelativeLayout
+            android:id="@+id/paypwdmanager_open_without_code_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:background="@color/white0"
+            >
+            <TextView
+                style="@style/paypwdmanager_text"
+                android:text="@string/paypwdmanager_open_without_code_title"
+                />
+            <include layout="@layout/view_go_view_layout"></include>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

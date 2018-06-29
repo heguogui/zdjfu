@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/myasset_detail_color"
+        android:layout_width="@dimen/dimen_12_dip"
+        android:layout_height="@dimen/dimen_12_dip"
+        android:background="@drawable/shapre_red_radius1"
+        android:layout_marginLeft="@dimen/dimen_10_dip"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dimen_5_dip"
+        >
+
+        <TextView
+            android:id="@+id/myasset_detail_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6,888,888.00"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:textSize="@dimen/common_text_size15"
+            android:textColor="@color/colorBack3"
+            />
+        <TextView
+            android:id="@+id/myasset_detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:textSize="@dimen/common_text_size11"
+            android:textColor="@color/gray13"
+            android:layout_marginTop="@dimen/dimen_2_dip"
+            android:text="@string/myasset_use_balance"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

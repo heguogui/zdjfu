@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/persondetail_mine_ll"
+
+    >
+    <RelativeLayout
+        android:id="@+id/persondetail_headpicture_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10_dip"
+        >
+
+        <TextView
+            style="@style/setting_text"
+            android:text="@string/persondetail_headpicture_title"
+            android:textSize="@dimen/common_text_size18"
+            />
+
+        <ImageView
+            android:id="@+id/persondetail_headpicture_iv"
+            android:layout_width="@dimen/dimen_50_dip"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:src="@drawable/ic_launcher"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/persondetail_back_iv"
+            android:layout_marginRight="@dimen/dimen_5_dip"
+            />
+
+        <ImageView
+            android:id="@+id/persondetail_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:src="@mipmap/ic_go_finace_hbfx"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10_dip"
+        >
+
+        <TextView
+            style="@style/setting_text"
+            android:text="@string/persondetail_phone_title"
+            android:textSize="@dimen/common_text_size18"
+            />
+
+
+        <TextView
+            android:id="@+id/persondetail_phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/common_text_size18"
+            android:textColor="@color/gray3"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/persondetail_nick_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10_dip"
+        >
+
+        <TextView
+            style="@style/setting_text"
+            android:text="@string/persondetail_nick_title"
+            android:textSize="@dimen/common_text_size18"
+            />
+
+        <TextView
+            android:id="@+id/persondetail_nick_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/persondetail_nick_hint"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray3"
+            android:textSize="@dimen/common_text_size18"
+            android:layout_toLeftOf="@+id/persondetail_nick_iv"
+            android:layout_marginRight="@dimen/dimen_5_dip"
+            />
+        <ImageView
+            android:id="@+id/persondetail_nick_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:src="@mipmap/ic_go_finace_hbfx"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

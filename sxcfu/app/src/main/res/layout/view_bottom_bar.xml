@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_48_dip"
+    android:layout_gravity="bottom"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/tab_home"
+        style="@style/main_tab_style"
+        android:drawableTop="@drawable/home_tab_selector"
+        android:text="@string/home_title" />
+
+    <TextView
+        android:id="@+id/tab_financial"
+        style="@style/main_tab_style"
+        android:drawableTop="@drawable/finance_tab_selector"
+        android:text="@string/financial_title" />
+
+    <TextView
+        android:id="@+id/tab_fund"
+        style="@style/main_tab_style"
+        android:drawableTop="@drawable/fund_tab_selector"
+        android:text="@string/fund_title" />
+
+    <TextView
+        android:id="@+id/tab_mine"
+        style="@style/main_tab_style"
+        android:drawableTop="@drawable/mine_tab_selector"
+        android:text="@string/mine_title" />
+
+
+</LinearLayout>

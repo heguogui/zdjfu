@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white0"
+    android:orientation="vertical"
+    android:id="@+id/transationdetail_main_ll">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:id="@+id/transationdetail_radioButtons">
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="@string/transationdetail_all"
+            android:id="@+id/transationdetail_radiob_tab_all"
+            android:button="@null"
+            android:checked="true"
+            android:textSize="16sp"
+            android:textColor="@color/colorBack3"
+            android:layout_weight="2.99"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/my_investment_tab_select" />
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="@string/transationdetail_rechange"
+            android:id="@+id/transationdetail_rechange_rb"
+            android:button="@null"
+            android:checked="false"
+            android:textSize="16sp"
+            android:textColor="@color/colorBack3"
+            android:layout_weight="2.99"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/my_investment_tab_select" />
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="@string/transationdetail_withdrawdeposit"
+            android:id="@+id/transationdetail_withdrawdeposit_rb"
+            android:button="@null"
+            android:checked="false"
+            android:textSize="16sp"
+            android:textColor="@color/colorBack3"
+            android:layout_weight="2.99"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/my_investment_tab_select" />
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="@string/transationdetail_invest"
+            android:id="@+id/transationdetail_invest_rb"
+            android:button="@null"
+            android:textSize="16sp"
+            android:textColor="@color/colorBack3"
+            android:layout_weight="2.99"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/my_investment_tab_select" />
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="@string/transationdetail_backmoney"
+            android:id="@+id/transationdetail_backmoney_rb"
+            android:button="@null"
+            android:textSize="16sp"
+            android:textColor="@color/colorBack3"
+            android:layout_weight="2.99"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/my_investment_tab_select" />
+    </RadioGroup>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray0"
+        android:layout_marginTop="-7dp">
+
+        <ImageView
+            android:id="@+id/cursor"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="5"
+            android:scaleType="fitXY"
+            android:src="@color/blue5" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="5"
+            android:background="@null" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="5"
+            android:background="@null" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="5"
+            android:background="@null" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="5"
+            android:background="@null" />
+    </TableRow>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/transationdetail_vPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:flipInterval="30"
+        android:fadingEdge="none"
+        android:persistentDrawingCache="animation"
+        android:layout_marginBottom="-4dp"
+        android:background="@color/graybg"
+        />
+
+</LinearLayout>

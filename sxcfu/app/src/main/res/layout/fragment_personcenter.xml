@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    >
+
+    <RelativeLayout
+        android:id="@+id/personcenter_nickandphone_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_7_dip"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        android:background="@drawable/stroke_white_solid_white_radius5"
+        >
+
+        <ImageView
+            android:id="@+id/personcenter_head_picture_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/headicon"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:layout_marginBottom="@dimen/dimen_10_dip"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/personcenter_head_picture_iv"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_12_dip"
+            >
+
+            <TextView
+                android:id="@+id/personcenter_nick_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/common_text_size15"
+                android:textColor="@color/colorBack3"
+                />
+
+            <TextView
+                android:id="@+id/personcenter_phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/common_text_size15"
+                android:textColor="@color/colorBack3"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:src="@mipmap/next"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        android:layout_marginTop="@dimen/dimen_7_dip"
+        android:background="@drawable/stroke_white_solid_white_radius5"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/personcenter_certification_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            >
+
+            <ImageView
+                android:id="@+id/personcenter_certification_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/name_auth"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                />
+            <TextView
+                style="@style/personcenter_text"
+                android:text="@string/personcenter_namecertification_title"
+                android:layout_toRightOf="@+id/personcenter_certification_iv"
+                />
+
+            <TextView
+                android:id="@+id/personcenter_namecertification_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/common_text_size12"
+                android:layout_toLeftOf="@+id/personcenter_namecertification_tv"
+                android:layout_marginRight="@dimen/dimen_5_dip"
+                android:textColor="@color/gray12"
+                />
+
+            <TextView
+                android:id="@+id/personcenter_namecertification_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/common_text_size12"
+                android:layout_toLeftOf="@+id/personcenter_namecertification_iv"
+                android:layout_marginRight="@dimen/dimen_5_dip"
+                android:textColor="@color/gray12"
+                />
+
+            <ImageView
+                android:id="@+id/personcenter_namecertification_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+        <include layout="@layout/view_line_item"></include>
+        <RelativeLayout
+            android:id="@+id/personcenter_bankcard_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            >
+
+            <ImageView
+                android:id="@+id/personcenter_bankcard_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/bankcard_manager"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                />
+            <TextView
+                style="@style/personcenter_text"
+                android:text="@string/personcenter_bankcard_title"
+                android:layout_toRightOf="@+id/personcenter_bankcard_iv"
+                />
+
+            <TextView
+                android:id="@+id/personcenter_state_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/blue5"
+                android:textSize="@dimen/common_text_size12"
+                android:layout_toLeftOf="@+id/personcenter_addbankcard_iv"
+                android:layout_marginRight="@dimen/dimen_5_dip"
+                />
+
+            <ImageView
+                android:id="@+id/personcenter_addbankcard_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:src="@mipmap/next"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+        <include layout="@layout/view_line_item"></include>
+
+
+        <RelativeLayout
+            android:id="@+id/personcenter_dealpassword_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            >
+
+            <ImageView
+                android:id="@+id/personcenter_dealpassword_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/paypwd_manager"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                />
+            <TextView
+                style="@style/personcenter_text"
+                android:text="@string/personcenter_updatedealpassword_title"
+                android:layout_toRightOf="@+id/personcenter_dealpassword_iv"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:src="@mipmap/next"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        android:layout_marginTop="@dimen/dimen_7_dip"
+        android:background="@drawable/stroke_white_solid_white_radius5"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/personcenter_loginpassword_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            >
+
+            <ImageView
+                android:id="@+id/personcenter_loginpassword_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/update_login_pwd"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                />
+            <TextView
+                style="@style/personcenter_text"
+                android:text="@string/personcenter_updateloginpassword_title"
+                android:layout_toRightOf="@+id/personcenter_loginpassword_iv"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:src="@mipmap/next"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+        <include layout="@layout/view_line_item"></include>
+
+        <RelativeLayout
+            android:id="@+id/personcenter_gesturepassword_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/personcenter_gesturepassword_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/gesture_pwd"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                />
+            <TextView
+                style="@style/personcenter_text"
+                android:text="@string/personcenter_gesturepassword_title"
+                android:layout_toRightOf="@+id/personcenter_gesturepassword_iv"
+                />
+
+            <ToggleButton
+                android:id="@+id/personcenter_gesturepassword_tb"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:button="@drawable/togglebutton_selector"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/personcenter_exitapp_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/personcenter_exitapp_title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/stroke_white_solid_white_radius5"
+        android:enabled="true"
+        android:textColor="@color/colorBack3"
+        />
+
+
+
+</LinearLayout>

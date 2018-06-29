@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graybg"
+    >
+
+
+    <RelativeLayout
+       android:id="@+id/coupon_title_notication_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_32_dip"
+        android:background="#ffefdd"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/coupon_notication_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/gold9"
+            android:textSize="@dimen/common_text_size13"
+           android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/coupon_notication_unuser_tv"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/dimen_18_dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:text="暂不使用"
+            android:textSize="@dimen/common_text_size12"
+            android:gravity="center"
+            android:textColor="@color/gold9"
+            android:background="@drawable/stroke_yello_solid_white_radius5"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_73_dip"
+        android:gravity="center_vertical"
+        android:background="@color/white0"
+        >
+
+        <ImageView
+            android:id="@+id/withdraw_deposit_icon"
+            android:layout_width="@dimen/dimen_30_dip"
+            android:layout_height="@dimen/dimen_30_dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/withdraw_deposit_icon"
+            >
+            <TextView
+                android:id="@+id/withdraw_deposit_bankname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_text_size15"
+                android:textColor="@color/colorBack3"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/withdraw_deposit_explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_text_size12"
+                android:textColor="@color/gray3"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimen_5_dip"
+                android:visibility="visible"
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_35_dip"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        >
+
+        <TextView
+            android:layout_width="@dimen/dimen_80_dip"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/common_text_size12"
+            android:textColor="@color/gray3"
+            android:gravity="center_vertical"
+            android:text="@string/withdraw_deposit_balance_title"
+            android:paddingTop="@dimen/dimen_5_dip"
+            />
+
+        <TextView
+            android:id="@+id/withdraw_deposit_balance_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/common_text_size12"
+            android:textColor="@color/blue5"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/dimen_5_dip"
+            />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/view_line_item"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white0"
+            android:orientation="vertical"
+            android:id="@+id/withdraw_deposit_amount_ll"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip"
+
+                >
+
+                <TextView
+                    android:id="@+id/withdraw_deposit_amount_tv"
+                    android:layout_width="@dimen/dimen_100_dip"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/common_text_size15"
+                    android:textColor="@color/colorBack3"
+                    android:gravity="center_vertical"
+                    android:text="@string/withdraw_deposit_amount_title"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    android:layout_centerVertical="true"
+                    />
+
+                <com.hz.zdjfu.application.widget.view.EditTextWithClear
+                    android:id="@+id/withdraw_deposit_amount_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/common_text_size14"
+                    android:textColor="@color/colorBack3"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/withdraw_deposit_amount_hint"
+                    android:textColorHint="@color/gray2"
+                    android:background="@null"
+                    android:paddingRight="@dimen/dimen_15_dip"
+                    android:digits="0123456789."
+                    android:inputType="number"
+                    android:layout_toRightOf="@+id/withdraw_deposit_amount_tv"
+                    android:layout_centerVertical="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:singleLine="true"
+
+                    />
+            </RelativeLayout>
+            <include layout="@layout/view_interval_line_item"></include>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="@dimen/dimen_100_dip"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/common_text_size15"
+                    android:textColor="@color/colorBack3"
+                    android:gravity="center_vertical"
+                    android:text="@string/withdraw_deposit_cost"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/withdraw_deposit_cost_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/common_text_size14"
+                        android:textColor="@color/colorBack3"
+                        android:gravity="center_vertical|right"
+                        android:text="0.00"
+                        android:layout_toLeftOf="@+id/withdraw_deposit_coupon_tv"
+                        android:layout_marginRight="@dimen/dimen_15_dip"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/withdraw_deposit_coupon_tv"
+                        android:layout_width="@dimen/dimen_76_dip"
+                        android:layout_height="@dimen/dimen_22_dip"
+                        android:layout_marginRight="@dimen/dimen_10_dip"
+                        android:textColor="@color/blue5"
+                        android:textSize="@dimen/common_text_size14"
+                        android:gravity="center"
+                        android:text="@string/withdraw_deposit_usercoupon"
+                        android:background="@drawable/stroke_blue_solid_white_radius5"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="@dimen/dimen_100_dip"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/common_text_size15"
+                    android:textColor="@color/colorBack3"
+                    android:gravity="center_vertical"
+                    android:text="@string/withdraw_deposit_deduct"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    />
+
+                <TextView
+                    android:id="@+id/withdraw_deposit_deduct_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/common_text_size14"
+                    android:textColor="#fa6453"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="@dimen/dimen_15_dip"
+                    android:text="0.00"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/withdraw_deposit_amount_ll"
+            android:visibility="visible"
+            >
+            <LinearLayout
+                android:id="@+id/withdraw_deposit_servicerechange_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimen_15_dip"
+                android:visibility="visible"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/red_radius100"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/withdraw_deposit_explaint_tv"
+                    android:textSize="@dimen/common_text_size12"
+                    android:textColor="@color/gray2"
+                    android:gravity="center_vertical"
+                    android:text="@string/withdraw_deposit_servicerechange_title"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/withdraw_deposit_explain_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimen_5_dip"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/red_radius100"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/common_text_size12"
+                    android:textColor="@color/gray2"
+                    android:gravity="center_vertical"
+                    android:text="@string/withdraw_deposit_explain_title"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/withdraw_deposit_submit_btn"
+            style="@style/login_reigster_btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/common_submint"
+            android:enabled="false"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen_80_dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size16"
+            android:layout_below="@+id/withdraw_deposit_amount_ll"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_text_size12"
+            android:textColor="@color/gray2"
+            android:gravity="center"
+            android:text="@string/withdraw_deposit_explain"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:layout_below="@+id/withdraw_deposit_submit_btn"
+            android:visibility="gone"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

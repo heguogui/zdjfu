@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/transationdetail_item_month_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray5"
+            android:textSize="@dimen/common_text_size14"
+            android:paddingBottom="@dimen/dimen_10_dip"
+            android:paddingTop="@dimen/dimen_15_dip"
+            android:paddingLeft="@dimen/dimen_17_dip"
+            android:background="@color/graybg"
+            />
+
+        <RelativeLayout
+            android:id="@+id/transationdetail_item_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transationdetail_item_month_tv"
+            android:background="@color/white0"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:layout_marginBottom="@dimen/dimen_10_dip"
+            >
+
+            <ImageView
+                android:id="@+id/transationdetail_item_type_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_17_dip"
+                />
+            <LinearLayout
+                android:id="@+id/transationdetail_item_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/transationdetail_item_type_iv"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                >
+                <TextView
+                    android:id="@+id/transationdetail_item_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBack3"
+                    android:textSize="@dimen/common_text_size16"
+                    />
+
+                <TextView
+                    android:id="@+id/transationdetail_item_state_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray13"
+                    android:textSize="@dimen/common_text_size14"
+                    />
+
+                <TextView
+                    android:id="@+id/transationdetail_item_time_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray13"
+                    android:textSize="@dimen/common_text_size14"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/transationdetail_item_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_14_dip"
+                android:textSize="@dimen/common_text_size15"
+                android:layout_centerVertical="true"
+                android:textColor="@color/back0"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/transationdetail_item_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_2_dip"
+            >
+            <include layout="@layout/view_interval_line_item"></include>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
