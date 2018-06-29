@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exit_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+       <RelativeLayout
+           android:layout_width="@dimen/dimen_279_dip"
+           android:layout_height="@dimen/dimen_284_dip"
+           android:background="@android:color/transparent"
+
+           >
+
+           <com.bigkoo.convenientbanner.ConvenientBanner
+               android:id="@+id/namevalid_convenientBanner"
+               android:layout_width="@dimen/dimen_268_dip"
+               android:layout_height="@dimen/dimen_274_dip"
+               android:layout_alignParentBottom="true"
+                />
+
+           <ImageView
+               android:id="@+id/namevalid_dialog_cancle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@mipmap/close"
+               android:layout_alignParentRight="true"
+               />
+
+       </RelativeLayout>
+
+</RelativeLayout>

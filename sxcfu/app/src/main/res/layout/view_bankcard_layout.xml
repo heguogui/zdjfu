@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_5_dip"
+    >
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout_my_bank_manage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_113_dip"
+        android:background="@mipmap/ic_bank_bg_red"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        >
+
+
+        <ImageView
+            android:id="@+id/img_bank_icon"
+            android:layout_width="@dimen/dimen_36_dip"
+            android:layout_height="@dimen/dimen_36_dip"
+            android:layout_marginTop="@dimen/dimen_18_dip"
+            android:layout_marginLeft="@dimen/dimen_18_dip"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_36_dip"
+            android:id="@+id/text_bank_name"
+            android:layout_marginTop="18dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="@dimen/dimen_8_dip"
+            android:textColor="@color/white0"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/img_bank_icon"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_bank_codenumb"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/common_text_size18"
+            android:textColor="@color/white0"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/text_bank_name"
+            android:layout_alignLeft="@+id/text_bank_name"
+            />
+
+
+        <TextView
+            android:id="@+id/view_binded_tv"
+            android:layout_width="@dimen/dimen_45_dip"
+            android:layout_height="@dimen/dimen_15_dip"
+            android:background="@drawable/white_radius30"
+            android:text="已绑定"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_12_dip"
+            android:layout_marginRight="@dimen/dimen_12_dip"
+            android:textSize="@dimen/common_text_size10"
+            android:gravity="center"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@mipmap/ic_bank_bg_red">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/text_defualt_gray_radius"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textSize="13dp"
+                android:gravity="center_vertical|center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="14dp"
+                android:textColor="@color/white0" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="19dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_qx_set"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_bank_tx_cre"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+</LinearLayout>

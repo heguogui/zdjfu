@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/xrefreshview_footer_content"
+    android:layout_height="65dp"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:visibility="gone"
+        >
+        <ProgressBar
+            android:id="@+id/xrefreshview_footer_progressbar_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/xrefreshview_footer_hint_textview_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/xrefreshview_footer_hint_normal" />
+
+        <TextView
+            android:id="@+id/xrefreshview_footer_click_textview_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/xrefreshview_footer_hint_ready" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--A轮融资、注册资本、汇付天下模块布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <!--A轮融资-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_rongzi" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    >
+                    <TextView
+                        android:id="@+id/index_rongzi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="数千万"
+                        android:textColor="@color/gray5"
+                        android:textSize="10sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A轮融资"
+                        android:textColor="@color/gray5"
+                        android:textSize="10sp"
+                        android:layout_marginTop="@dimen/dimen_2_dip"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <!--5000万-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_shijiao" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    >
+                    <TextView
+                        android:id="@+id/index_shijiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="五千万"
+                        android:textColor="@color/gray5"
+                        android:textSize="10sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="实缴资本"
+                        android:textColor="@color/gray5"
+                        android:textSize="10sp"
+                        android:layout_marginTop="@dimen/dimen_2_dip"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--汇付天下-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/home_tuoguan" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    >
+                    <TextView
+                        android:id="@+id/index_tuoguan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="银行存管"
+                        android:textColor="@color/gray5"
+                        android:textSize="10sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="新浪支付"
+                        android:textColor="@color/gray5"
+                        android:textSize="10sp"
+                        android:layout_marginTop="@dimen/dimen_2_dip"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+        <!--投资提醒标识语-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:src="@mipmap/index_zhuyi"
+                    />
+
+                <TextView
+                    android:id="@+id/index_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="理财有风险，投资需谨慎"
+                    android:textColor="#a4a4a4"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>

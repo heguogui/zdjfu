@@ -1,0 +1,492 @@
+<resources>
+    <string name="app_name">正道金服理财</string>
+    <string name="close">关闭</string>
+    <string name="common_net_error">网络不给力,请检查网络连接</string>
+    <string name="common_sure">确定</string>
+    <string name="common_cancle">取消</string>
+    <string name="common_delete">删除</string>
+    <string name="common_save">保存</string>
+    <string name="common_uptate">编辑</string>
+    <string name="common_danwei">元</string>
+    <string name="common_service_phone">客服热线400-690-9898</string>
+    <string name="common_sd_error">内存不足或者不存在,请检查!</string>
+    <string name="common_contract_company">咨询客服</string>
+    <string name="common_notication">温馨提示</string>
+    <string name="common_submint">提交</string>
+    <string name="dialog_know_title">知道了</string>
+
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="no_more">没有更多了</string>
+    <string name="release_to_load">释放立即加载</string>
+    <!--   <string name="loading">正在加载...</string>-->
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="empty_message">暂无记录</string>
+    <string name="error_message">请求失败!请检查网络</string>
+    <string name="empty_button">重新加载</string>
+    <string name="loading_button">重新加载</string>
+    <string name="error_button">重新加载</string>
+    <string name="no_network">当前网络不可用</string>
+    <string name="http_timeout">网络错误，请稍后重试</string>
+
+
+    <string name="financial_title">理财</string>
+    <string name="fund_title">发现</string>
+    <string name="home_title">正道</string>
+    <string name="mine_title">我的</string>
+
+
+    <!--理财-->
+    <string name="financial_title_df">默认</string>
+    <string name="financial_title_zz">债转</string>
+    <string name="financial_title_zt">直投</string>
+    <string name="financial_item_earnings">年化</string>
+    <string name="financial_item_data">收益天数</string>
+    <string name="financial_item_amount">剩余可投</string>
+    <string name="financial_zt_title_tv">直投</string>
+    <string name="financial_zz_title_tv">债转</string>
+
+
+
+
+    <string name="listview_header_hint_normal">pull to refresh</string>
+    <string name="listview_header_hint_release">release to start refresh</string>
+    <string name="listview_header_last_time">last update：</string>
+    <string name="listview_loading">loading...</string>
+    <string name="nomore_loading">no more to be loaded</string>
+    <string name="refresh_done">refresh done</string>
+
+    <string name="money_separator">,</string>
+    <string name="defalut_money_separator">###,###,##0.00</string>
+    <string name="defalut_money_00">#####0.00</string>
+    <string name="defalut_money">###,###</string>
+    <string name="defalut_money_no_split">######</string>
+    <string name="finace_empty_project">暂无符合条件项目</string>
+
+    <!--登录页面-->
+    <string name="login_title">登录</string>
+    <string name="login_password_error">登录密码不正确</string>
+    <string name="login_phone_error">电话号码未注册</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_fail">登录失败</string>
+
+    <!--注册页面-->
+    <string name="regist_title">注册</string>
+    <string name="regist_inputphone_error">请输入正确的手机号码</string>
+    <string name="regist_password_error">登录密码格式不正确 必须为6-16个字符，数字和英文的组合</string>
+    <string name="regist_code_error">请输入正确的验证码</string>
+    <string name="regist_success">注册成功</string>
+    <string name="regist_fail">注册失败</string>
+    <string name="regist_input_phonenumber_hint">输入手机号码</string>
+    <string name="regist_code_hint">输入验证码</string>
+    <string name="regist_password_hint">设置6-16位数字+英文组合的登录密码</string>
+    <string name="regist_inviter_title">邀请人手机号</string>
+    <string name="regist_inviter_hint">输入邀请码/邀请人手机号(选填)</string>
+    <string name="regist_submit_btn">注册领红包</string>
+    <string name="regist_agreement_hint">我已阅读并同意《正道金服服务协议》</string>
+    <string name="regist_bottom_title_hint">上海银行资金监管</string>
+    <string name="regist_servers_title">正道金服服务协议</string>
+
+
+    <!--我的-->
+    <string name="mine_all_assets_tv">总资产(元)</string>
+    <string name="mine_all_earnings_tv">累计收益(元)</string>
+    <string name="mine_duein_moneys_tv">待收金额(元)</string>
+    <string name="mine_account_banlance_tv">账户余额(元)</string>
+    <string name="mine_withdraw_deposit_tv">提现</string>
+    <string name="mine_recharge_tv">充值</string>
+    <string name="mine_invest_title">我的投资</string>
+    <string name="mine_calendar_title">回款日历</string>
+    <string name="mine_redpacket_coupon_title">红包卡券</string>
+    <string name="mine_buiba_title">兑换中心</string>
+    <string name="mine_invite_title">邀请好友</string>
+    <string name="mine_riskassess_title">风险评估</string>
+    <string name="mine_onlineservice_title">在线客服</string>
+    <string name="mine_invite_hint">获好友投资2‰正经值</string>
+    <string name="mine_riskassess_hint">进取型</string>
+    <string name="mine_balance_notication">平台已对接上海银行资金存管，原汇付天下内的余额不可用于投资,仅支持提现,为了您的资金安全,请及时登录官网进行提现</string>
+
+    <!--回款日历-->
+    <string name="rmcalendar_top_title">回款日历</string>
+    <string name="rmcalendar_month_allmoney_title">本月应收</string>
+    <string name="rmcalendar_month_duein_title">本月待收</string>
+    <string name="rmcalendar_day_no_duein_title">今日无回款</string>
+    <string name="rmcalendar_more_earning_title">赚取更多收益</string>
+
+    <!--消息-->
+    <string name="message_top_title">消息</string>
+    <string name="message_top_right">标记已读</string>
+    <string name="message_top_right_all_read">已全读</string>
+    <string name="message_look_detail">查看详情</string>
+
+    <!--个人中心-->
+    <string name="personcenter_top_title">账户中心</string>
+    <string name="personcenter_nick_empty_tv">你未设置昵称</string>
+    <string name="personcenter_namecertification_title">实名认证</string>
+    <string name="personcenter_bankcard_title">银行卡管理</string>
+    <string name="personcenter_updateloginpassword_title">修改登录密码</string>
+    <string name="personcenter_updatedealpassword_title">支付密码管理</string>
+    <string name="personcenter_gesturepassword_title">手势密码</string>
+    <string name="personcenter_exitapp_title">退出登录</string>
+    <string name="personcenter_addbankcard_tv">添加银行卡</string>
+    <string name="personcenter_namecertification_dialog_tilte">您尚未进行实名认证</string>
+    <string name="personcenter_namecertification_dialog_content">实名认证（资金托管）能有效保障您的资金安全，使资金进出均受银行监管。</string>
+
+
+
+    <!--设置-->
+    <string name="setting_top_title">设置</string>
+    <string name="setting_message_title">消息推送</string>
+    <string name="setting_cache_title">清除缓存</string>
+    <string name="setting_contact_title">联系我们</string>
+    <string name="setting_about_title">关于我们</string>
+    <string name="setting_share_title">分享给财友</string>
+    <string name="setting_company_title">正道金服</string>
+    <string name="setting_checkversion_tv">检查更新</string>
+    <string name="setting_updataversion">立即升级</string>
+    <string name="setting_dialog_delete">以后再说</string>
+    <string name="setting_dialog_sure">立即安装</string>
+
+    <!--联系我们-->
+    <string name="contact_company_top_title">联系我们</string>
+    <string name="contact_company_phone">客服热线</string>
+    <string name="contact_company_time">工作日:&#160;9：30-20:00:&#160;节假日:&#160;9：30-18:00</string>
+    <string name="contact_company_web">www.zdjfu.com</string>
+    <string name="contact_company_web_title">正道金服官方网站</string>
+    <string name="contact_company_weixin_tltle">微信公众号</string>
+    <string name="contact_company_qq_tltle">QQ交流群</string>
+    <string name="contact_company_qq_number">463637911</string>
+    <string name="contact_company_weixin">zdjfu161208</string>
+    <string name="contact_company_phoneone">400-690-9898</string>
+    <string name="contact_company_phonetwo">0571-56981476</string>
+    <string name="contact_company_name">杭州云翳网络科技有限公司</string>
+    <string name="contact_company_address">杭州市西湖区文一西路767号西溪国际商务中心E座909</string>
+
+
+
+    <!--个人资料-->
+    <string name="persondetail_top_title">个人资料</string>
+    <string name="persondetail_headpicture_title">头像</string>
+    <string name="persondetail_phone_title">手机号码</string>
+    <string name="persondetail_nick_title">昵称</string>
+    <string name="persondetail_nick_hint">您还未设置昵称</string>
+    <string name="persondetail_ablum">手机相册</string>
+    <string name="persondetail_camera">拍照模式</string>
+
+    <!--设置昵称-->
+    <string name="update_nick_top_titlle">昵称设置</string>
+    <string name="update_nick_hint">请设置4-25个字符昵称</string>
+    <string name="update_nick_save">保存</string>
+    <string name="update_nick_input_out">昵称不能超过25个字符</string>
+    <string name="update_nick_success">昵称设置成功</string>
+    <string name="update_nick_input_empty">昵称不能为空</string>
+
+
+    <!--银行卡管理-->
+    <string name="bankcard_top_title">银行卡管理</string>
+    <string name="bankcard_add_title">添加银行卡</string>
+    <string name="bankcard_add_success">添加成功</string>
+    <string name="bankcard_notication_canclecard">您已经绑定快捷卡，不能再换绑。若需解绑，请致电客服热线400-690-9898进行咨询。</string>
+    <string name="bankcard_notication_title">温馨提示:</string>
+    <string name="bankcard_notication_content">当您需要解除绑定当前银行卡,请确保账户可用余额=0,如账户可用余额>0时，请先申请提款，再解绑。</string>
+    <string name="bankcard_unbind_title">银行卡解绑</string>
+    <string name="bankcard_bind_title">已绑定</string>
+    <string name="bankcard_dialog_title">提示</string>
+    <string name="bankcard_dialog_content">您的可用余额>0，无法解除银行卡绑定</string>
+
+
+    <!--添加银行卡-->
+    <string name="addbankcard_top_title">银行卡绑定</string>
+
+
+    <!--银行卡管理-->
+    <string name="unbindbankcard_top_title">银行卡管理</string>
+    <string name="unbindbankcard_phone">手机号:</string>
+    <string name="unbindbankcard_code">验证码:</string>
+    <string name="unbindbankcard_phone_hint">请输入银行卡预留手机号码</string>
+    <string name="unbindbankcard_code_hint">请输入短信验证码</string>
+
+
+
+    <string name="updateloginpassword_top_title">修改登录密码</string>
+    <string name="updateloginpassword_old_psd_title">原登录密码：</string>
+    <string name="updateloginpassword_new_psd_title">新登录密码：</string>
+    <string name="updateloginpassword_sure_new_psd_title">再次确认登录密码：</string>
+    <string name="updateloginpassword_notication_tv">密码由8-16位含数字/字母/符号组成</string>
+    <string name="updateloginpassword_forget_psd_tv">忘记密码</string>
+    <string name="updateloginpassword_sure_update_tv">确认修改</string>
+    <string name="updateloginpassword_old_psd_hint">请输入原登录密码</string>
+    <string name="updateloginpassword_new_psd_hint">请输入新密码</string>
+    <string name="updateloginpassword_sure_new_psd_hint">请再次确认新密码</string>
+    <string name="updateloginpassword_two_psd_error">两次密码输入不一致</string>
+    <string name="updateloginpassword_old_psd_error">原登录密码错误</string>
+    <string name="updateloginpassword_update_success">登录密码修改成功</string>
+
+
+
+    <!--忘记密码页面-->
+    <string name="forgetpsd_top_title">忘记密码</string>
+    <string name="forgetpsd_inputphone_error">请输入正确的手机号码</string>
+    <string name="forgetpsd_code_error">请输入正确的验证码</string>
+    <string name="forgetpsd_password_error">请输入正确的密码</string>
+    <string name="forgetpsd_imgcode_error">图片验证码不能为空</string>
+    <string name="forgetpsd_setting_success">设置成功</string>
+    <string name="forgetpsd_setting_fail">设置失败</string>
+    <string name="forgetpsd_input_phonenumber_hint">输入手机号码</string>
+    <string name="forgetpsd_code_hint">输入验证码</string>
+    <string name="forgetpsd_password_hint">设置6-16位数字+英文组合的登录密码</string>
+    <string name="forgetpsd_imgcode_hint">请输入图片验证码</string>
+    <string name="forgetpsd_bottom_title_hint">上海银行资金监管</string>
+    <string name="forgetpsd_sendcode_tv">获取验证码</string>
+
+
+    <!--手势密码-->
+    <string name="lockscreen_access_pattern_start">开始绘制图案</string>
+    <string name="lockscreen_access_pattern_cleared">图案已清除</string>
+    <string name="lockscreen_access_pattern_cell_added">已添加单元格</string>
+    <string name="lockscreen_access_pattern_detected">手势密码设置成功</string>
+    <string name="lockpattern_retry_button_text">重新绘制</string>
+    <string name="lockpattern_continue_button_text">继续</string>
+    <string name="lockpattern_continue_button_cancel">""</string>
+    <string name="lockpattern_confirm_button_text">确认</string>
+    <string name="lockpattern_recording_intro_header">请绘制密码</string>
+    <string name="lockpattern_settings_help_how_to_record">如何绘制解锁图案</string>
+    <string name="lockpattern_recording_incorrect_too_short">至少连接4个点，请重新绘制</string>
+    <string name="lockpattern_pattern_entered_header">图案已保存</string>
+    <string name="lockpattern_need_to_confirm">请再次绘制密码</string>
+    <string name="lockpattern_need_to_unlock_wrong">两次图案不一致，请重新绘制</string>
+    <string name="lockpattern_pattern_confirmed_header">手势密码设置成功</string>
+    <string name="lockpattern_recording_inprogress">完成后松开手指</string>
+    <string name="gesture_password_guide_text">你可以创建一个解锁图案，这样他人在借用你的手机时，将无法打开应用。</string>
+    <string name="gesture_password_guide_creat_btn">创建手势密码</string>
+    <string name="gesture_password_guide_reset_login">请重新登录并重置手势密码</string>
+    <string name="gesture_reset_login">重新登录</string>
+    <string name="gesture_set_pwd_title">设置手势密码</string>
+    <string name="gesture_input_pwd_title">手势密码</string>
+    <string name="gesture_top_right_title">跳过</string>
+
+
+    <!--实名认证-->
+    <string name="namecertification_bindcard">绑定银行卡</string>
+    <string name="namecertification_top_title">开通上海银行存管账户</string>
+    <string name="namecertification_namecertification">实名认证</string>
+    <string name="namecertification_settingpwd">设置支付密码</string>
+    <string name="namecertification_name">姓名</string>
+    <string name="namecertification_idcard">身份证</string>
+    <string name="namecertification_next_tv">下一步</string>
+
+
+    <!--红包卡卷-->
+    <string name="redpacketcoupon_top_title">红包卡券</string>
+    <string name="redpacketcoupon_tag_title">限非新手标</string>
+    <string name="redpacketcoupon_startuser_title">即将过期</string>
+    <string name="redpacketcoupon_zjzbanlance_title">正经值余额:</string>
+    <string name="redpacketcoupon_exchange_center_title">兑换中心</string>
+    <string name="redpacketcoupon_redpacket_title">红包</string>
+    <string name="redpacketcoupon_addinterestcoupon_title">加息券</string>
+    <string name="redpacketcoupon_redpacket_empty_title">暂无红包</string>
+    <string name="redpacketcoupon_addintersetcoupon_empty_title">暂无加息券</string>
+
+    <!--我的投资-->
+    <string name="myinvest_top_title">我的投资</string>
+    <string name="myinvest_tag_all_title">全部</string>
+    <string name="myinvest_tag_investing_title">投资中</string>
+    <string name="myinvest_tag_perform_title">履约中</string>
+    <string name="myinvest_tag_backmoney_title">已回款</string>
+    <string name="myinvest_tag_lock_title">锁定期</string>
+    <string name="myinvest_expect_earning_title">预期收益</string>
+    <string name="myinvest_investcapital_title"></string>投资本金
+    <string name="myinvest_day_end">天到期</string>
+    <string name="myinvest_repayment_ing">回款中</string>
+    <string name="myinvest_money_no">已售罄</string>
+    <string name="myinvest_wait_pay">待支付</string>
+    <string name="myinvest_wait_loading">加载中</string>
+    <string name="myinvest_online_pay">在线支付</string>
+
+    <!--正经值兑换中心-->
+    <string name="rechangecenter_top_title">正经值兑换</string>
+    <string name="rechangecenter_zjzbanlance_title">正经值</string>
+    <string name="rechangecenter_userdetail_title">正经值明细</string>
+    <string name="rechangedetail_top_title">积分明细</string>
+
+    <!--我的资产-->
+    <string name="myasset_top_title">我的资产</string>
+    <string name="myasset_transaction_detail">查看资金交易明细</string>
+    <string name="myasset_all_invest">累计投资(元)</string>
+    <string name="myasset_all_earning">累计收益(元)</string>
+    <string name="myasset_all_rechange">累计充值(元)</string>
+    <string name="myasset_all_usered_coupon">使用优惠(元)</string>
+    <string name="myasset_all_withdraw_dispost">累计提现(元)</string>
+    <string name="myasset_use_balance">账户可用金额(元)</string>
+    <string name="myasset_freeze_amount">冻结金额(元)</string>
+    <string name="myasset_wait_back">待收金额(元)</string>
+    <!--交易明细-->
+    <string name="transationdetail_top_title">交易明细</string>
+    <string name="transationdetail_all">全部</string>
+    <string name="transationdetail_rechange">充值</string>
+    <string name="transationdetail_withdrawdeposit">提现</string>
+    <string name="transationdetail_invest">投资</string>
+    <string name="transationdetail_backmoney">回款</string>
+
+    <!--开通上海银行存管账户-->
+    <string name="openshbankaccount_bankcard_detail">银行卡信息</string>
+    <string name="openshbankaccount_cardid_detail">身份证信息</string>
+
+    <string name="openshbankaccount_name">真实姓名</string>
+    <string name="openshbankaccount_idcard">身份证号</string>
+    <string name="openshbankaccount_bankcard">银行卡号</string>
+
+    <string name="openshbankaccount_type">选择银行</string>
+    <string name="openshbankaccount_type_hint">选择开户银行</string>
+    <string name="openshbankaccount_province">开户省市</string>
+    <string name="openshbankaccount_province_hint">选择开户省市</string>
+    <string name="openshbankaccount_city">开卡城市</string>
+    <string name="openshbankaccount_city_hint">选择开卡城市</string>
+
+    <string name="openshbankaccount_bankcode">银行卡验证</string>
+    <string name="openshbankaccount_phone">手机号</string>
+    <string name="openshbankaccount_code">验证码</string>
+    <string name="openshbankaccount_name_hint">请输入真实姓名</string>
+    <string name="openshbankaccount_idcard_hint">请输入有效的证件号码</string>
+    <string name="openshbankaccount_bankcard_hint">请输入银行卡号</string>
+    <string name="openshbankaccount_phone_hint">请输入银行卡预留手机号码</string>
+    <string name="openshbankaccount_code_hint">请输入短信验证码</string>
+    <string name="openshbankaccount_notication_title">温馨提示:</string>
+    <string name="openshbankaccount_notication_content">为保障资金安全,请务必绑定本人的银行借记卡(暂不支持信用卡)，此银行借记卡将作为您在APP内唯一的支付及提现卡。</string>
+    <string name="openshbankaccount_explain">查看支持银行及限额</string>
+    <string name="openshbankaccount_next_tv">下一步</string>
+    <string name="openshbankaccount_back_notication_title">未开通上海银行存管账户不能进行投资,提现,充值等操作</string>
+
+
+    <!--提现-->
+    <string name="withdraw_deposit_top_title">提现</string>
+    <string name="withdraw_deposit_balance_title">账户余额(元):</string>
+    <string name="withdraw_deposit_amount_title">提现金额:</string>
+    <string name="withdraw_deposit_amount_hint">请输入提现金额</string>
+
+    <string name="withdraw_deposit_cost">提取费用:</string>
+    <string name="withdraw_deposit_deduct">实际扣除:</string>
+    <string name="withdraw_deposit_usercoupon">使用优惠券</string>
+    <string name="withdraw_deposit_servicerechange_title">到账时间：T+1个自然日(法定节假日以平台公告为准)</string>
+    <string name="withdraw_deposit_explain_title">当前提现金额超出单笔限额,请分笔提交</string>
+    <string name="withdraw_deposit_explain">账户余额≤1元,建议一次性提完</string>
+
+    <!--邀请好友-->
+    <string name="invitefriend_top_title">邀请好友</string>
+    <string name="invitefriend_rule_title">邀请好友规则</string>
+    <string name="invitefriend_awardreword_title">我的奖励记录</string>
+
+
+    <!--邀请记录-->
+    <string name="invitereword_top_title">邀请记录</string>
+    <string name="invitereword_tag_time">注册时间</string>
+    <string name="invitereword_tag_name">用户名</string>
+    <string name="invitereword_tag_namber">贡献正经值</string>
+
+
+
+    <!--微信分享-->
+    <string name="errcode_success">分享成功</string>
+    <string name="errcode_cancel">分享取消</string>
+    <string name="errcode_deny">分享被拒绝</string>
+    <string name="errcode_unknown">分享失败</string>
+    <string name="wx_share_title">注册投资立享288元，更有每日签到惊喜</string>
+    <string name="wx_share_content">我正在使用正道金服投资理财，推荐给你一起赚。银行存管，投资更放心</string>
+
+    <!--发现-->
+    <string name="fund_signin_title">每日签到</string>
+    <string name="fund_noobcontest_title">新手赢奖</string>
+    <string name="fund_zjzrechange_title">正经值兑换</string>
+    <string name="fund_servicehelp_title">客服帮助</string>
+    <string name="fund_more_title">更多></string>
+    <string name="fund_zdjf_title">正道金服</string>
+    <string name="fund_zdjf_content_title">银行存管&#160;三大保障</string>
+    <string name="fund_news_title">媒体报道</string>
+
+    <!--活动中心-->
+    <string name="partycenter_top_title">活动中心</string>
+    <string name="partycenter_item_oldparty_title">查看过期活动</string>
+    <string name="oldparty_item_currentparty_title">查看当前活动</string>
+    <string name="oldparty_item_top_title">往期活动</string>
+
+    <!--新手赢奖-->
+    <string name="noobcontest_top_title">新手赢奖</string>
+    <string name="noobcontest_state_complete">已达成</string>
+    <string name="noobcontest_state_uncomplete">未达成</string>
+    <string name="noobcontest_more_title">更多奖励任务敬请期待</string>
+
+
+    <string name="home_tag_noobcontest_title">精彩活动</string>
+    <string name="home_tag_invitewelfare_title">每日签到</string>
+    <string name="home_tag_safeguard_title">安全保障</string>
+    <string name="home_tag_platformdata_title">平台数据</string>
+    <string name="home_invist_btn">100元起投</string>
+
+    <!--下载版本-->
+    <string name="app_update_dialog_content">已有新版本%1$s提供下载\n</string>
+    <string name="app_update_dialog_content2">已有新版本%1$s提供下载，更新内容如下:\n%2$s</string>
+    <string name="app_update_dialog_content3">最新%1$s版本特征</string>
+    <string name="app_update_downloading">正在下载，请稍后</string>
+    <string name="app_update_version_update">版本更新</string>
+    <string name="app_update_download_progress">下载进度：%1$s%%</string>
+    <string name="app_update_download_success">下载完成</string>
+    <string name="app_update_download_error_tip">下载失败，稍后再试</string>
+    <string name="app_update_download_not_apk">安装包未找到，重新下载中</string>
+
+    <!--支付密码管理-->
+    <string name="paypwdmanager_top_title">支付密码管理</string>
+    <string name="paypwdmanager_callback_phone_title">找回认证手机号码</string>
+    <string name="paypwdmanager_update_pwd_title">修改支付密码</string>
+    <string name="paypwdmanager_forget_pwd_title">忘记支付密码</string>
+    <string name="paypwdmanager_open_without_code_title">开通免密支付</string>
+
+    <string name="rechange_top_title">充值</string>
+    <string name="rechange_notication_top">充值金额将进入您的上海银行个人存管账户</string>
+    <string name="rechange_account_balance">账户余额(元):</string>
+    <string name="rechange_input_amount_hint">请输入充值金额</string>
+    <string name="rechange_input_amount_title">充值金额(元):</string>
+    <string name="rechange_sure_rechange">确认充值</string>
+    <string name="rechange_notication_bottom">当日充值金额,下一个工作日方可提现</string>
+    <string name="rechange_bigamount_top_title">大额充值方式</string>
+
+    <string name="discount_top_title">优惠券</string>
+    <string name="discount_use_title">可用优惠券</string>
+    <string name="discount_unuse_title">不可用优惠券</string>
+    <string name="discount_zjz_title">正经值</string>
+    <string name="discount_redpacketandjiaxi_title">红包、加息券</string>
+
+
+    <!--投资详情-->
+    <string name="invest_detail_top_title">投资详情</string>
+    <string name="invest_detail_progect_name">项目编号</string>
+    <string name="invest_detail_pay_time">投资时间</string>
+    <string name="invest_detail_interest">预期年化</string>
+    <string name="invest_detail_progect_detail">项目详情</string>
+    <string name="invest_detail_progect_week">项目周期</string>
+    <string name="invest_detail_payway">还款方式</string>
+    <string name="invest_detail_amount">投资本金</string>
+    <string name="invest_detail_discount">优惠抵扣</string>
+    <string name="invest_detail_earning">预期收益</string>
+    <string name="invest_detail_agreement">协议书</string>
+    <string name="invest_detail_return_detail">还款计划</string>
+    <string name="invest_detail_totail_num">期数</string>
+    <string name="invest_detail_return_time">还款日</string>
+    <string name="invest_detail_return_amount">金额</string>
+    <string name="invest_detail_return_state">状态</string>
+    <string name="invest_detail_order_delete">取消订单</string>
+    <string name="invest_detail_return_needpay">立即支付</string>
+
+
+    <string name="interest_bearing_instructions_title">计息说明</string>
+    <string name="interest_bearing_instructions_content">1.项目满标或在募集期结束后达到最低募集金额，则项目成立；\n 2.项目成立的次日开始计息；\n 3.如项目未达到最低募集金额导致流标将退还本金／抵扣优惠至您的账户中；\n 4.募集期不计息，收益天数不包括募集期。</string>
+
+    <string name="expect_earning">预计年化利率</string>
+    
+    
+</resources>

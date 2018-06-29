@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources >
+    
+
+    <string-array name="mycar_lisense">
+        <item>中国银行</item>
+        <item>中国工商银行</item>
+        <item>中国农业银行</item>
+        <item>中国建设银行</item>
+        <item>中国交通银行</item>
+        <item>中国招商银行</item>
+        <item>中国邮政储蓄银行</item>
+        <item>中信银行</item>
+        <item>光大银行</item>
+        <item>兴业银行</item>
+        <item>中国民生银行</item>
+        <item>广发银行</item>
+        <item>华夏银行</item>
+        <item>杭州银行</item>
+        <item>平安银行</item>
+        <item>北京农村商业银行</item>
+        <item>浦发银行</item>
+        <item>北京银行</item>
+        <item>上海银行</item>
+        <item>渤海银行</item>
+        <item>浙商银行</item>
+        <item>南京银行</item>
+        <item>上海农村商业银行</item>
+    </string-array>
+
+    <array name="customCalendar_currentDay_bg_DashPath">
+        <item>8</item>
+        <item>8</item>
+        <item>8</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+    </array>
+
+</resources>

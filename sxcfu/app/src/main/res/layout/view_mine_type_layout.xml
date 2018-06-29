@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/mine_invest_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dimen_7_dip"
+        >
+
+        <ImageView
+            android:id="@+id/mine_invest_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/my_invest"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            style="@style/mine_type_text"
+            android:text="@string/mine_invest_title"
+            android:layout_toRightOf="@+id/mine_invest_iv"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/mine_invest_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white0"
+            android:layout_toLeftOf="@+id/invest_back_Iv"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            android:textSize="9sp"
+            android:background="@drawable/stroke_red_solid_red_radius30"
+            android:paddingLeft="@dimen/dimen_6_dip"
+            android:paddingRight="@dimen/dimen_6_dip"
+            android:paddingTop="@dimen/dimen_2_dip"
+            android:paddingBottom="@dimen/dimen_2_dip"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/invest_back_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/next"
+
+            />
+
+
+    </RelativeLayout>
+    <include layout="@layout/view_line_item"></include>
+
+    <RelativeLayout
+        android:id="@+id/mine_calendar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:background="@color/white0"
+        >
+
+        <ImageView
+            android:id="@+id/mine_calendar_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/calender"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            style="@style/mine_type_text"
+            android:text="@string/mine_calendar_title"
+            android:layout_toRightOf="@+id/mine_calendar_iv"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/mine_notication_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red2"
+            android:layout_toLeftOf="@+id/calendar_back_Iv"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            />
+
+        <ImageView
+            android:id="@+id/calendar_back_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/next"
+
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mine_redpacket_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:layout_marginTop="@dimen/dimen_7_dip"
+        android:background="@color/white0"
+        >
+
+        <ImageView
+            android:id="@+id/mine_redpacket_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/red"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            style="@style/mine_type_text"
+            android:text="@string/mine_redpacket_coupon_title"
+            android:layout_toRightOf="@+id/mine_redpacket_iv"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/mine_redpacket_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/redpacket_back_Iv"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            android:textColor="@color/gray12"
+            />
+
+        <ImageView
+            android:id="@+id/redpacket_back_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/next"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mine_duiba_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:layout_marginTop="@dimen/dimen_7_dip"
+        android:background="@color/white0"
+        >
+
+        <ImageView
+            android:id="@+id/mine_duiba_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/duiba"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            style="@style/mine_type_text"
+            android:text="@string/mine_buiba_title"
+            android:layout_toRightOf="@+id/mine_duiba_iv"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/mine_duiba_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/duiba_back_Iv"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            android:textColor="@color/gray12"
+            />
+
+        <ImageView
+            android:id="@+id/duiba_back_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/next"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/mine_invite_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:layout_marginTop="@dimen/dimen_7_dip"
+        android:background="@color/white0"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/mine_inviter_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/invest_friends"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            style="@style/mine_type_text"
+            android:text="@string/mine_invite_title"
+            android:layout_toRightOf="@+id/mine_inviter_iv"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/mine_inviter_notication_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red2"
+            android:layout_toLeftOf="@+id/invite_back_Iv"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            />
+
+        <ImageView
+            android:id="@+id/invite_back_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/next"
+
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mine_riskevaluation_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:layout_marginTop="@dimen/dimen_7_dip"
+        android:background="@color/white0"
+        >
+
+        <ImageView
+            android:id="@+id/mine_riskevaluation_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/online_service"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            style="@style/mine_type_text"
+            android:text="@string/mine_onlineservice_title"
+            android:layout_toRightOf="@+id/mine_riskevaluation_iv"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/mine_riskevaluation_notication_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray12"
+            android:layout_toLeftOf="@+id/riskevaluation_back_Iv"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/common_text_size12"
+            />
+
+        <ImageView
+            android:id="@+id/riskevaluation_back_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/next"
+
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

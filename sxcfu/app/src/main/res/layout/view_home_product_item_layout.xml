@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="160dp"
+    android:background="@mipmap/product_bg"
+    android:id="@+id/home_item_product_rl"
+    >
+
+    <LinearLayout
+        android:id="@+id/home_item_downtime_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_8_dip"
+        android:layout_marginTop="@dimen/dimen_7_dip"
+        android:background="@drawable/blue_radius30"
+        android:paddingLeft="@dimen/dimen_5_dip"
+        android:paddingBottom="@dimen/dimen_4_dip"
+        android:paddingTop="@dimen/dimen_4_dip"
+        android:paddingRight="@dimen/dimen_5_dip"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="倒计时"
+            android:textSize="@dimen/common_text_size12"
+            android:textColor="@color/blue5"
+            />
+        <com.hz.zdjfu.application.widget.view.CountdownTimeTextView
+            android:id="@+id/home_item_downtime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:textSize="@dimen/common_text_size12"
+            android:textColor="@color/blue5"
+            >
+
+        </com.hz.zdjfu.application.widget.view.CountdownTimeTextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/home_item_nianhualv_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/gray12"
+        android:text="@string/expect_earning"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/common_text_size12"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/home_item_nianhualv_tv"
+        android:layout_marginBottom="@dimen/dimen_4_dip"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/home_item_interest_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="33sp"
+            android:textColor="@color/red4"
+            android:text="0.00"
+            android:gravity="bottom"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="@dimen/common_text_size14"
+            android:textColor="@color/red4"
+            android:text="%"
+            android:gravity="bottom"
+            android:paddingLeft="@dimen/dimen_1_dip"
+            />
+        <LinearLayout
+            android:id="@+id/home_item_platfrom_interest_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="@dimen/common_text_size14"
+                android:textColor="@color/red4"
+                android:text="+"
+                android:gravity="bottom"
+                android:layout_marginLeft="@dimen/dimen_2_dip"
+                android:layout_marginRight="@dimen/dimen_2_dip"
+                />
+            <TextView
+                android:id="@+id/home_item_add_interest_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="@dimen/common_text_size20"
+                android:textColor="@color/red4"
+                android:text="0.00"
+                android:gravity="bottom"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="@dimen/common_text_size14"
+                android:textColor="@color/red4"
+                android:text="%"
+                android:gravity="bottom"
+                android:paddingLeft="@dimen/dimen_1_dip"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_item_nianhualv_tv"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/home_item_interestday_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="180"
+                    android:textColor="@color/gray5"
+                    android:textSize="@dimen/common_text_size20"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="天"
+                    android:textColor="@color/gray12"
+                    android:textSize="@dimen/common_text_size12"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/gray12"
+                android:textSize="@dimen/common_text_size12"
+                android:text="项目周期"
+                android:layout_marginTop="@dimen/dimen_5_dip"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/home_item_remain_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/gray5"
+                    android:textSize="@dimen/common_text_size20"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/gray12"
+                    android:textSize="@dimen/common_text_size12"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/gray12"
+                android:textSize="@dimen/common_text_size12"
+                android:text="剩余金额"
+                android:layout_marginTop="@dimen/dimen_5_dip"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

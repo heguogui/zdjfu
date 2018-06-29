@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/graybg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/discount_sure_btn"
+        >
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:dividerPadding="10dp"
+            android:divider="@drawable/divider_line"
+            android:showDividers="middle"
+            android:background="@drawable/frame_end_color"
+            >
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="@string/discount_use_title"
+                android:id="@+id/discount_use_rb"
+                android:button="@null"
+                android:checked="true"
+                android:textSize="@dimen/common_text_size16"
+                android:textColor="@drawable/blue_black_selector"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/gray_white_pressed"
+                android:layout_marginBottom="1dp" />
+
+            <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="@string/discount_unuse_title"
+                android:id="@+id/discount_unuse_rb"
+                android:button="@null"
+                android:checked="false"
+                android:textSize="@dimen/common_text_size16"
+                android:textColor="@drawable/blue_black_selector"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/gray_white_pressed" />
+
+        </RadioGroup>
+
+        <TableRow
+            android:id="@+id/discount_tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            >
+
+            <ImageView
+                android:id="@+id/discount_cursor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_2_dip"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:src="@color/blue5"
+                android:layout_marginLeft="@dimen/dimen_25_dip"
+                android:layout_marginRight="@dimen/dimen_25_dip" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@null"
+                android:layout_weight="1" />
+
+        </TableRow>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/discount_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:flipInterval="30"
+            android:fadingEdge="none"
+            android:persistentDrawingCache="animation"
+            android:layout_marginTop="@dimen/dimen_5_dip"
+            android:layout_gravity="bottom"
+             />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/discount_sure_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:background="@color/blue5"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="@string/common_sure"
+        android:textSize="16sp"
+        android:textColor="@color/white0"
+        />
+
+
+</RelativeLayout>

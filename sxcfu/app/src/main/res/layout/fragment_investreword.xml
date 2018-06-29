@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xrefreshview="http://schemas.android.com/apk/res-auto"
+    android:background="@color/graybg"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/investreword_stickhead_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40_dip"
+            android:background="@color/white0"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_30_dip"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/user"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBack3"
+                    android:textSize="14sp"
+                    android:text="用户名"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_30_dip"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/invite_amount"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBack3"
+                    android:textSize="14sp"
+                    android:text="投资金额"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    />
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/gray1"
+                android:layout_alignParentBottom="true"
+                />
+
+        </RelativeLayout>
+
+        <com.hz.zdjfu.application.widget.view.XXRefreshView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xrefreshview:autoRefresh="false"
+            android:id="@+id/investreword_refreshview"
+            android:layout_below="@+id/investreword_stickhead_rl"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/investreword_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </com.hz.zdjfu.application.widget.view.XXRefreshView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/investreword_stickhead_rl"
+            android:id="@+id/investreword_empty_data_rl"
+            android:visibility="gone"
+            >
+            <include layout="@layout/view_empty_data"></include>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graybg"
+    android:gravity="top">
+
+    <ScrollView
+        android:id="@+id/rechangecenter_sv"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#fde6db"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正经值余额："
+                    android:id="@+id/textView155"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignBaseline="@+id/rechangecenter_balance_tv"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    android:textColor="@color/colorBack3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:id="@+id/rechangecenter_balance_tv"
+                    android:layout_toRightOf="@+id/textView155"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/red4"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 元"
+                    android:id="@+id/textView154"
+                    android:layout_toRightOf="@+id/rechangecenter_balance_tv"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignBaseline="@+id/rechangecenter_balance_tv"
+                    android:textColor="@color/colorBack3" />
+
+                <TextView
+                    android:id="@+id/rechangecenter_user_detail_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="正经值明细"
+                    android:textSize="12dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorBack3"
+                    android:layout_toLeftOf="@+id/rechangecenter_next_tv"
+                    android:gravity="center_vertical"
+                    android:paddingRight="@dimen/dimen_5_dip"
+                    android:paddingLeft="@dimen/dimen_5_dip"
+                    />
+
+                <ImageView
+                    android:id="@+id/rechangecenter_next_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/next"
+                    android:layout_marginRight="@dimen/dimen_15_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_110_dip"
+                android:src="@mipmap/ic_sxb_banner"
+                android:scaleType="fitXY"
+                />
+
+           <android.support.v7.widget.RecyclerView
+               android:id="@+id/rechangecenter_recycleview"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="@dimen/dimen_5_dip"
+               android:layout_marginRight="@dimen/dimen_15_dip"
+               android:layout_marginLeft="@dimen/dimen_15_dip"
+               android:layout_marginBottom="@dimen/dimen_15_dip"
+               >
+           </android.support.v7.widget.RecyclerView>
+            <RelativeLayout
+                android:id="@+id/empty_data_rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                >
+                <include layout="@layout/view_empty_data"></include>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

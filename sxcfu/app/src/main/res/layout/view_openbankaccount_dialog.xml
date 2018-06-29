@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exit_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    >
+
+       <RelativeLayout
+           android:layout_width="267dp"
+           android:layout_height="@dimen/dimen_267_dip"
+           android:background="@android:color/transparent"
+
+           >
+
+
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="@dimen/dimen_10_dip"
+               android:background="@mipmap/openbank_bg"
+               android:layout_marginRight="@dimen/dimen_10_dip"
+               >
+
+               <Button
+                   android:id="@+id/update_dialog_sure"
+                   android:layout_width="@dimen/dimen_140_dip"
+                   android:layout_height="@dimen/dimen_34_dip"
+                   android:layout_alignParentBottom="true"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginBottom="@dimen/dimen_18_dip"
+                   android:background="@drawable/stroke_red_solid_red_radius5"
+                   android:text="立即开通"
+                   android:textSize="@dimen/common_text_size14"
+                   android:textColor="@color/white0"
+                   />
+
+           </RelativeLayout>
+           <ImageView
+               android:id="@+id/update_dialog_cancle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@mipmap/close"
+               android:layout_alignParentRight="true"
+               />
+
+       </RelativeLayout>
+
+</RelativeLayout>

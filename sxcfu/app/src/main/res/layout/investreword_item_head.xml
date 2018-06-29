@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/graybg"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/dimen_5_dip"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30_dip"
+            android:background="@color/white0"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:text="名次"
+                android:textSize="14sp"
+                android:paddingRight="@dimen/dimen_15_dip"
+                android:textColor="@color/colorBack3" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="用户名"
+                android:textSize="14sp"
+                android:textColor="@color/colorBack3" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="正经值奖励"
+                android:textSize="14sp"
+                android:paddingLeft="@dimen/dimen_10_dip"
+                android:textColor="@color/colorBack3"
+                />
+
+        </LinearLayout>
+
+        <!--上半部分-->
+        <LinearLayout
+            android:id="@+id/history_head_bid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/dimen_5_dip"
+            >
+
+            <!--快手抢标行-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_90_dip"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_marginRight="@dimen/dimen_14_dip"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_85_dip"
+                    android:background="@drawable/red_radius_5"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/ranking_quick_one_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ranking_one"
+                                android:layout_marginLeft="@dimen/dimen_55_dip"
+                                android:layout_centerVertical="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/ranking_quick_one_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="虚位待抢"
+                                android:textColor="@color/red4"
+                                android:textSize="14sp"
+                                android:layout_centerInParent="true"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/ranking_quick_one_zjz"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/red4"
+                                android:textSize="14sp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/dimen_50_dip"
+                                android:layout_centerVertical="true"
+                                android:text="+5"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/ranking_quick_two_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ranking_two"
+                                android:layout_marginLeft="@dimen/dimen_55_dip"
+                                android:layout_centerVertical="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/ranking_quick_two_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="虚位待抢"
+                                android:textColor="@color/red4"
+                                android:textSize="14sp"
+                                android:layout_centerInParent="true"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/ranking_quick_two_zjz"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/red4"
+                                android:textSize="14sp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/dimen_50_dip"
+                                android:layout_centerVertical="true"
+                                android:text="+3"
+
+                                />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/ranking_quick_three_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ranking_three"
+                                android:layout_marginLeft="@dimen/dimen_55_dip"
+                                android:layout_centerVertical="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/ranking_quick_three_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="虚位待抢"
+                                android:textColor="@color/red4"
+                                android:textSize="14sp"
+                                android:layout_centerInParent="true"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/ranking_quick_three_zjz"
+                                android:layout_width="wrap_content"
+                                android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/red4"
+                                android:textSize="14sp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/dimen_50_dip"
+                                android:layout_centerVertical="true"
+                                android:text="+1"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:ems="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="快手抢标"
+                    android:textColor="@color/white0"
+                    android:textSize="15sp"
+                    android:background="@mipmap/quick_hand"
+                    />
+
+            </RelativeLayout>
+
+
+            <!--重量级抢标行-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_90_dip"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_marginRight="@dimen/dimen_14_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_85_dip"
+                    android:background="@drawable/gold_radius_5"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/ranking_weight_one_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ranking_one"
+                                android:layout_marginLeft="@dimen/dimen_55_dip"
+                                android:layout_centerVertical="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/ranking_weight_one_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="虚位待抢"
+                                android:textColor="@color/gold11"
+                                android:textSize="14sp"
+                                android:layout_centerInParent="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/ranking_weight_one_zjz"
+                                android:layout_width="150dp"
+                                android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/gold11"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="@dimen/dimen_10_dip"
+                                android:layout_toRightOf="@+id/ranking_weight_one_phone"
+                                android:layout_centerVertical="true"
+                                android:text="+投资额x0.07%"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/ranking_weight_two_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ranking_two"
+                                android:layout_marginLeft="@dimen/dimen_55_dip"
+                                android:layout_centerVertical="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/ranking_weight_two_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="虚位待抢"
+                                android:textColor="@color/gold11"
+                                android:textSize="14sp"
+                                android:layout_centerInParent="true"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/ranking_weight_two_zjz"
+                                android:layout_width="150dp"
+                                android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/gold11"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="@dimen/dimen_10_dip"
+                                android:layout_toRightOf="@+id/ranking_weight_two_phone"
+                                android:layout_centerVertical="true"
+                                android:text="+投资额x0.03%"
+                                />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:ems="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="重量级抢标"
+                    android:textColor="@color/white0"
+                    android:textSize="15sp"
+                    android:background="@mipmap/weight_hand"
+
+                    />
+
+            </RelativeLayout>
+
+
+
+            <!--收尾抢标-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_90_dip"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_marginRight="@dimen/dimen_14_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_85_dip"
+                    android:background="@drawable/blue_radius_5"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/ranking_lase_one_iv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ranking_one"
+                                android:layout_marginLeft="@dimen/dimen_55_dip"
+                                android:layout_centerVertical="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/ranking__lase_one_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="虚位待抢"
+                                android:textColor="@color/blue11"
+                                android:textSize="14sp"
+                                android:layout_centerInParent="true"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/ranking__lase_one_zjz"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/blue11"
+                                android:textSize="14sp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/dimen_50_dip"
+                                android:layout_centerVertical="true"
+                                android:text="+8"
+
+                                />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:ems="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="收尾抢标"
+                    android:textColor="@color/white0"
+                    android:textSize="15sp"
+                    android:background="@mipmap/last_hand"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--用户名、投资金额、投资时间行-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40_dip"
+        android:background="@color/white0"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dimen_7_dip"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_30_dip"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/user"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBack3"
+                android:textSize="14sp"
+                android:text="用户名"
+                android:layout_marginLeft="@dimen/dimen_5_dip"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_30_dip"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/invite_amount"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBack3"
+                android:textSize="14sp"
+                android:text="投资金额"
+                android:layout_marginLeft="@dimen/dimen_5_dip"
+                />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/view_interval_line_item"></include>
+
+
+</LinearLayout>
+

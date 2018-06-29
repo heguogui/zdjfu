@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hz.zdjfu.application.widget.view.XXRefreshView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xrefreshview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/announcementlist_xrefreshview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xrefreshview:autoRefresh="false"
+    android:background="@color/gray"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/announcementlist_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/announcementlist_empty_data_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        >
+        <include layout="@layout/view_empty_data"></include>
+    </RelativeLayout>
+
+</com.hz.zdjfu.application.widget.view.XXRefreshView>

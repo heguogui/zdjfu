@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graybg"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/bankcardmanager_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bankcardmanager_recyclerview"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="15dp"
+                android:listSelector="@android:color/transparent"
+                android:layout_marginTop="15dp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_13_dip"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:gravity="center_vertical"
+
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/notication_iv"
+                    />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bankcard_notication_title"
+                    android:textColor="@color/colorBack3"
+                    android:textSize="@dimen/common_text_size13"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bankcard_notication_content"
+                android:layout_marginTop="@dimen/dimen_7_dip"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:textSize="12sp"
+                android:layout_marginRight="@dimen/dimen_15_dip"
+                android:textColor="@color/gray13"
+                />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bankcardmanager_unbind_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bankcard_unbind_title"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dimen_60_dip"
+            android:gravity="center"
+            android:textColor="@color/blue5"
+            android:background="@drawable/stroke_white_solid_white_radius5"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:layout_marginRight="@dimen/dimen_15_dip"
+            android:paddingTop="@dimen/dimen_13_dip"
+            android:paddingBottom="@dimen/dimen_13_dip"
+            android:textSize="@dimen/common_text_size16"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bankcardmanager_empaty_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="@color/graybg"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/add_bankcard"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_37_dip"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/gray13"
+                android:text="添加银行卡"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_5_dip"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/gray13"
+                android:text="开启安心理财投资体验"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_3_dip"
+                />
+            <Button
+                android:id="@+id/bankcardmanager_add_btn"
+                android:background="@drawable/stroke_white_solid_white_radius5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_42_dip"
+                android:text="@string/bankcard_add_title"
+                android:layout_marginTop="@dimen/dimen_55_dip"
+                android:gravity="center"
+                android:textColor="@color/blue5"
+                android:layout_marginRight="@dimen/dimen_15_dip"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

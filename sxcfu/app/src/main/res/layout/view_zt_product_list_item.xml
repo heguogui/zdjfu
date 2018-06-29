@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/productlist_item_main"
+    android:background="@color/white0"
+    android:layout_marginBottom="@dimen/dimen_3_dip"
+    >
+
+    
+    <RelativeLayout
+        android:id="@+id/productlist_item_bg_rl"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_marginLeft="@dimen/dimen_7_dip"
+        android:layout_marginRight="@dimen/dimen_22_dip"
+        >
+
+        <RelativeLayout
+            android:id="@+id/productlist_item_head_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            >
+
+            <ImageView
+                android:id="@+id/productlist_item_isfresh_iv"
+                android:layout_width="@dimen/dimen_63_dip"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:src="@mipmap/fresh"
+                android:layout_centerVertical="true"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/productlist_item_isfresh_iv"
+
+                >
+
+                <TextView
+                    android:id="@+id/productlist_item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    android:textColor="@color/gray5"
+                    android:textSize="@dimen/common_text_size14"
+                    android:text="车财道0000期"
+                    />
+
+                <TextView
+                    android:id="@+id/productlist_item_one_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    android:textColor="@color/red8"
+                    android:textSize="@dimen/common_text_size11"
+                    android:paddingTop="@dimen/dimen_2_dip"
+                    android:paddingBottom="@dimen/dimen_2_dip"
+                    android:paddingLeft="@dimen/dimen_5_dip"
+                    android:paddingRight="@dimen/dimen_5_dip"
+                    android:gravity="center"
+                    android:text="标签1"
+                    android:background="@color/red9"
+                    android:visibility="visible"
+                    />
+
+                <TextView
+                    android:id="@+id/productlist_item_two_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    android:textColor="@color/gold13"
+                    android:textSize="@dimen/common_text_size11"
+                    android:paddingTop="@dimen/dimen_2_dip"
+                    android:paddingBottom="@dimen/dimen_2_dip"
+                    android:paddingLeft="@dimen/dimen_5_dip"
+                    android:paddingRight="@dimen/dimen_5_dip"
+                    android:gravity="center"
+                    android:text="标签2"
+                    android:background="#FFF2EA"
+                    android:visibility="visible"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/productlist_item_earnings_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_marginTop="@dimen/dimen_8_dip"
+            android:layout_below="@+id/productlist_item_head_rl"
+            >
+
+            <RelativeLayout
+                android:id="@+id/productlist_item_center_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:id="@+id/productlist_item_earnings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="0.00"
+                    android:textColor="@color/gold13"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/productlist_item_earnings_dw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/productlist_item_earnings"
+                    android:layout_toRightOf="@+id/productlist_item_earnings"
+                    android:gravity="bottom"
+                    android:paddingBottom="@dimen/dimen_5_dip"
+                    android:text="%"
+                    android:textColor="@color/gold13"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:id="@+id/productlist_item_earnings_fillrates_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/productlist_item_earnings"
+                    android:layout_toRightOf="@+id/productlist_item_earnings_dw">
+
+                    <TextView
+                        android:id="@+id/productlist_item_earnings_fillrates"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:paddingBottom="@dimen/dimen_5_dip"
+                        android:text="+0.00"
+                        android:textColor="@color/gold13"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/productlist_item_earnings_fillrates_dw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/productlist_item_earnings_fillrates"
+                        android:layout_toRightOf="@+id/productlist_item_earnings_fillrates"
+                        android:gravity="bottom"
+                        android:paddingBottom="@dimen/dimen_5_dip"
+                        android:text="%"
+                        android:textColor="@color/gold13"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/productlist_item_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                   android:paddingTop="@dimen/dimen_5_dip"
+                    android:text="15天"
+                    android:textColor="@color/colorBack3"
+                    android:textSize="18sp" />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/productlist_item_bottom_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productlist_item_center_rl"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray4"
+                    android:text="期望年化利率"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray4"
+                    android:layout_centerHorizontal="true"
+                    android:text="项目周期"
+                    android:gravity="center"
+                    />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/productlist_item_statu_btn"
+                android:layout_width="@dimen/dimen_90_dip"
+                android:layout_height="@dimen/dimen_32_dip"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/stroke_gray_solid_gray_radius5"
+                android:gravity="center"
+                android:textColor="@color/white0"
+                android:textSize="13sp"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/dimen_15_dip"
+                android:enabled="false"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graybg"
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/red"
+        android:id="@+id/tab_repayment_plan">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="1dip"
+                android:layout_height="44dp"
+                android:text="期数"
+                android:id="@+id/textView50"
+                android:textColor="@color/colorBack3"
+                android:textIsSelectable="false"
+                android:textSize="12dp"
+                android:layout_margin="0.5dp"
+                android:padding="5dp"
+                android:gravity="center_vertical|center"
+                android:background="#f9ecec" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="44dp"
+                android:text="还款日"
+                android:id="@+id/textView51"
+                android:textColor="@color/colorBack3"
+                android:textSize="12dp"
+                android:layout_span="3"
+                android:layout_marginTop="0.5dp"
+                android:padding="5dp"
+                android:gravity="center_vertical|center"
+                android:background="#f9ecec" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/payway_plan_rv"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        >
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

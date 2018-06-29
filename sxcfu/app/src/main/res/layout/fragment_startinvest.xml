@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graybg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30_dip"
+            android:background="@color/gold10"
+            >
+            <TextView
+                android:id="@+id/view_start_amont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起投金额:100元"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:textSize="13sp"
+                android:textColor="@color/gold12"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/view_lase_amont_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余可投:0元"
+                android:layout_marginRight="@dimen/dimen_14_dip"
+                android:textSize="13sp"
+                android:textColor="@color/gold12"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white0"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="投资金额(元)"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:textColor="@color/colorBack3"
+                android:textSize="@dimen/common_text_size15"
+                android:layout_marginTop="@dimen/dimen_15_dip"
+                />
+
+            <com.hz.zdjfu.application.widget.view.AddAndSubView
+                android:id="@+id/view_addandsub_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_20_dip"
+                android:layout_marginTop="@dimen/dimen_20_dip"
+                ></com.hz.zdjfu.application.widget.view.AddAndSubView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white0"
+            android:layout_marginTop="@dimen/dimen_7_dip"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/view_coupon_price_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="优惠券："
+                    android:textColor="@color/gray2"
+                    android:textSize="@dimen/common_text_size15"
+                    android:layout_marginLeft="@dimen/dimen_14_dip"
+                    android:gravity="center_vertical"
+                    />
+
+                <ImageView
+                    android:id="@+id/view_coupon_next_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/next"
+                    android:layout_marginRight="@dimen/dimen_15_dip"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_coupon_price_tv"
+                    android:layout_toLeftOf="@+id/view_coupon_next_iv"
+                    android:layout_marginLeft="@dimen/dimen_10_dip"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/red7"
+                    android:textSize="14sp"
+                    />
+
+            </RelativeLayout>
+            <include layout="@layout/view_interval_line_item"></include>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_45_dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="账户余额(元)："
+                    android:textColor="@color/gray2"
+                    android:textSize="@dimen/common_text_size14"
+                    android:layout_marginLeft="@dimen/dimen_15_dip"
+                    android:gravity="center_vertical"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view_balance_price_tv"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_15_dip"
+                    android:textColor="@color/colorBack3"
+                    android:textSize="@dimen/common_text_size14"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:gravity="center_vertical"
+            >
+
+            <CheckBox
+                android:id="@+id/view_invest_agreement_cb"
+                android:layout_width="@dimen/dimen_15_dip"
+                android:layout_height="@dimen/dimen_15_dip"
+                android:background="@drawable/check_selector"
+                android:button="@null"
+                />
+
+            <TextView
+                android:id="@+id/view_invest_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/login_submit_btn"
+            style="@style/login_reigster_btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen_50_dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size16"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

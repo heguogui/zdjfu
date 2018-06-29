@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--按下时按钮样式-->
+<item android:state_pressed="true">
+    <shape>
+        <gradient android:startColor="@color/blue5"
+            android:endColor="@color/blue5"
+            android:angle="270" />
+        <stroke android:width="1dip" android:color="@color/blue5" />
+        <corners android:radius="5dp" />
+        <padding android:left="10dp" android:top="10dp"
+            android:right="10dp" android:bottom="10dp" />
+    </shape>
+</item>
+<!--按钮可编辑时 时按钮样式-->
+<item android:state_enabled="true">
+    <shape>
+        <gradient android:startColor="@color/blue5"
+            android:endColor="@color/blue5"
+            android:angle="270" />
+        <stroke android:width="1dip" android:color="@color/blue5" />
+        <corners android:radius="5dp" />
+        <padding android:left="10dp" android:top="10dp"
+            android:right="10dp" android:bottom="10dp" />
+    </shape>
+</item>
+    <item android:state_enabled="false">
+        <shape>
+            <gradient android:startColor="@color/gray2"
+                android:endColor="@color/gray2"
+                android:angle="270" />
+            <stroke android:width="@dimen/dimen_5_dip"
+                android:color="@color/gray2" />
+            <corners android:radius="3dp" />
+            <padding android:left="10dp" android:top="10dp"
+                android:right="10dp" android:bottom="10dp" />
+        </shape>
+    </item>
+
+</selector>

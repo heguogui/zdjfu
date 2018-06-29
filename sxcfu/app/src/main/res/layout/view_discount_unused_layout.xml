@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/view_unuse_empty_data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/graybg"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_25_dip"
+            android:textColor="@color/gray13"
+            android:text="@string/discount_redpacketandjiaxi_title"
+            android:textSize="@dimen/common_text_size13"
+            android:layout_marginTop="@dimen/dimen_5_dip"
+            android:visibility="gone"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/discount_unuse_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5_dip"
+            >
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/discount_unuse_no_data_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+        <include layout="@layout/view_empty_data_layout"></include>
+
+    </RelativeLayout>
+
+</RelativeLayout>

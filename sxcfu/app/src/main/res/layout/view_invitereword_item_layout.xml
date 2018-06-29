@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:background="@color/gray0"
+        android:id="@+id/invitereword_item_tablelayout"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="44dp"
+                android:id="@+id/invitereword_item_name"
+                android:textColor="@color/colorBack3"
+                android:textSize="12sp"
+                android:background="@color/white0"
+                android:layout_margin="0.5dp"
+                android:padding="5dp"
+                android:gravity="center_vertical|center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="1dip"
+                android:layout_height="44dp"
+                android:id="@+id/invitereword_item_time"
+                android:textColor="@color/colorBack3"
+                android:textIsSelectable="false"
+                android:textSize="12sp"
+                android:background="@color/white0"
+                android:layout_margin="0.5dp"
+                android:padding="5dp"
+                android:gravity="center_vertical|center"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="44dp"
+                android:id="@+id/invitereword_item_number"
+                android:textColor="@color/colorBack3"
+                android:textSize="12sp"
+                android:background="@color/white0"
+                android:layout_margin="0.5dp"
+                android:padding="5dp"
+                android:gravity="center_vertical|center"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <include layout="@layout/load_no_data_more" />
+
+    </TableLayout>
+    <include layout="@layout/view_line_item"></include>
+
+
+</LinearLayout>

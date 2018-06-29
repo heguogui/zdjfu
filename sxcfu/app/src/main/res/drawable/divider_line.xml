@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--共同分割线的背景-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/gray0" />
+    <size android:height="0.5px" />
+    <size android:width="0.5px" />
+</shape>

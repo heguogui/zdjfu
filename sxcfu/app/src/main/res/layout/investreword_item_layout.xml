@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white0"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="@dimen/dimen_10_dip"
+        >
+
+        <TextView
+            android:id="@+id/investreword_item_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBack3"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/investreword_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray13"
+            android:textSize="12sp"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/investreword_item_phone"
+            />
+
+        <TextView
+            android:id="@+id/investreword_item_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBack3"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_15_dip"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+   <include layout="@layout/view_interval_line_item"></include>
+    <include layout="@layout/load_no_data_more" />
+
+</LinearLayout>

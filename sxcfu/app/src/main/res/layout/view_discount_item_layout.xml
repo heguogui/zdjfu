@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_90_dip"
+    android:layout_marginTop="@dimen/dimen_8_dip"
+    >
+
+    <RelativeLayout
+        android:id="@+id/discount_discounts_rl"
+        android:layout_width="@dimen/dimen_88_dip"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/redpacket_coupon_red_bg"
+        >
+
+        <LinearLayout
+            android:id="@+id/discount_discounts_number_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_25_dip"
+                android:text="¥"
+                android:textColor="@color/red4"
+                android:textSize="@dimen/common_text_size12"
+                android:layout_alignBottom="@+id/discount_discounts_number_tv"
+                android:gravity="bottom"
+                />
+            <TextView
+                android:id="@+id/discount_discounts_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textColor="@color/red4"
+                android:text="25"
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/discount_tag_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_text_size12"
+            android:textColor="@color/red4"
+            android:layout_below="@+id/discount_discounts_number_ll"
+            android:layout_marginTop="@dimen/dimen_5_dip"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/discount_discounts_rl"
+        android:layout_marginLeft="@dimen/dimen_5_dip"
+        android:background="@mipmap/redpack_coupon_white_bg"
+        >
+        <TextView
+            android:id="@+id/discount_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_text_size15"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:textColor="@color/colorBack3"
+            android:text="新手注册加息券"
+            />
+        <TextView
+            android:id="@+id/discount_day_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_text_size12"
+            android:layout_marginTop="@dimen/dimen_5_dip"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:textColor="@color/gray13"
+            android:text="收益天数>20天"
+            android:layout_below="@+id/discount_name_tv"
+            />
+
+
+        <TextView
+            android:id="@+id/discount_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_text_size11"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:layout_marginBottom="@dimen/dimen_15_dip"
+            android:textColor="@color/gray3"
+            android:text="2017-07-23至2018-09-23"
+            android:layout_below="@+id/discount_day_tv"
+            />
+
+
+        <CheckBox
+            android:id="@+id/discount_state_cb"
+            android:layout_width="@dimen/dimen_30_dip"
+            android:layout_height="@dimen/dimen_30_dip"
+            android:background="@drawable/check_selector"
+            android:layout_marginRight="@dimen/dimen_35_dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray10"
+    >
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48_dip"
+        android:orientation="horizontal"
+        android:id="@+id/financel_rg">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/financial_zt_title_tv"
+            android:id="@+id/financial_zt_rb"
+            android:button="@null"
+            android:checked="true"
+            android:textSize="16sp"
+            android:textColor="@color/performance_radiobutton_text"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:background="@color/blue5"
+            android:paddingRight="@dimen/dimen_20_dip"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/financial_zz_title_tv"
+            android:id="@+id/financial_zz_rb"
+            android:button="@null"
+            android:checked="false"
+            android:textSize="16sp"
+            android:textColor="@color/performance_radiobutton_text"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/dimen_20_dip"
+            android:background="@color/blue5"
+            />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dip"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white0"
+        >
+        <com.hz.zdjfu.application.widget.view.FinancialMarqueeView
+            android:id="@+id/financial_viewflipper"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:mvAnimDuration="1000"
+            app:mvInterval="3000"
+            app:mvTextColor="@color/gold13"
+            app:mvTextSize="12sp"
+            app:mvSingleLine="true"
+            android:background="#FFF2EA"
+            android:layout_marginLeft="@dimen/dimen_12_dip"
+            android:layout_marginRight="@dimen/dimen_12_dip"
+            android:paddingLeft="@dimen/dimen_10_dip"
+            android:paddingRight="@dimen/dimen_10_dip"
+            >
+
+        </com.hz.zdjfu.application.widget.view.FinancialMarqueeView>
+
+    </LinearLayout>
+
+
+    <com.hz.zdjfu.application.widget.view.NoScrollViewPager
+        android:id="@+id/financial_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/financial_viewflipper"
+        android:layout_marginTop="@dimen/dimen_2_dip"
+        >
+    </com.hz.zdjfu.application.widget.view.NoScrollViewPager>
+
+</LinearLayout>

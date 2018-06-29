@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    android:gravity="bottom">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.hz.zdjfu.application.widget.view.HackyViewPager
+
+            android:id="@+id/images_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_image_index"
+                android:textColor="@color/white0"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="bottom"
+                android:layout_centerHorizontal="true"
+                android:textSize="12dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_image_name"
+                android:textColor="@color/white0"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="bottom"
+                android:textSize="12dp"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:layout_toRightOf="@+id/txt_image_index" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

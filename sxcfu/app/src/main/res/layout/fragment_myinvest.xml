@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graybg"
+    android:orientation="vertical"
+    android:id="@+id/layout_is_suspension">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:id="@+id/radioButtons">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/myinvest_tag_all_title"
+            android:id="@+id/radiob_tab_all"
+            android:button="@null"
+            android:checked="true"
+            android:textSize="16sp"
+            android:textColor="@color/colorBack3"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@color/white0"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/myinvest_tag_perform_title"
+            android:id="@+id/radiob_tab_promiseIng"
+            android:button="@null"
+            android:checked="false"
+            android:textSize="16sp"
+            android:textColor="@color/colorBack3"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@color/white0"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/myinvest_tag_backmoney_title"
+            android:id="@+id/radiob_tab_repaymented"
+            android:button="@null"
+            android:textSize="16sp"
+            android:textColor="@color/colorBack3"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@color/white0"
+            />
+    </RadioGroup>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white0"
+        >
+
+        <ImageView
+            android:id="@+id/cursor"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="3"
+            android:scaleType="fitXY"
+            android:src="@color/blue5"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            android:layout_marginRight="@dimen/dimen_15_dip"
+
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="3"
+            android:background="@null" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="3"
+            android:background="@null" />
+    </TableRow>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/my_investment_vPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:flipInterval="30"
+        android:fadingEdge="none"
+        android:persistentDrawingCache="animation"
+        android:layout_marginBottom="-4dp"
+        android:background="@color/graybg"
+        />
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_centerInParent="true"
+    android:background="@mipmap/ic_sxb_bg"
+    android:id="@+id/layout_all"
+    android:layout_marginTop="@dimen/dimen_5_dip"
+    android:layout_marginBottom="@dimen/dimen_5_dip"
+    android:layout_marginLeft="@dimen/dimen_5_dip"
+    android:layout_marginRight="@dimen/dimen_5_dip"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@mipmap/ic_sxb_hb"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/layout_redpacket_rl"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_redpacket_amount_tv"
+            android:layout_marginLeft="12dp"
+            android:textSize="22sp"
+            android:textColor="#fffefe"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 元红包"
+            android:id="@+id/text_money_txt"
+            android:layout_marginRight="12dp"
+            android:textSize="14sp"
+            android:textColor="#ffea00"
+            android:layout_toRightOf="@+id/layout_redpacket_amount_tv"
+            android:layout_alignBaseline="@+id/layout_redpacket_amount_tv" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@mipmap/ic_sxb_add_icome"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:id="@+id/layout_addinterest_rl"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_addinterest_amount_tv"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:textSize="23sp"
+            android:textColor="#fffefe" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加息券"
+            android:ems="1"
+            android:id="@+id/textView153"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:textSize="14sp"
+            android:textColor="#ffea00" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_sxb_add_icome"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:id="@+id/layout_withdraw_rl"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="免"
+            android:id="@+id/textView145"
+            android:layout_marginLeft="40dp"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提现券"
+            android:ems="1"
+            android:id="@+id/textView151"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:textSize="14sp"
+            android:textColor="#ffea00" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_sxb_time_info"
+        android:layout_above="@+id/layout_sumbit_btn"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/layout_addinterest_rl"
+        android:textSize="10dp"
+        android:textColor="@color/colorBack3"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="正经值兑换"
+        android:id="@+id/layout_sumbit_btn"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/stroke_red_solid_red_radius30"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/white0"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>
+
+
+
+
+

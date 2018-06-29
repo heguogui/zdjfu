@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:background="@color/gold10"
+    >
+
+    <ImageView
+        android:id="@+id/financial_warquee_photo_iv"
+        android:layout_width="@dimen/dimen_30_dip"
+        android:layout_height="@dimen/dimen_30_dip"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginLeft="@dimen/dimen_10_dip"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/financial_warquee_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/gold13"
+        android:textSize="@dimen/common_text_size12"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/financial_warquee_photo_iv"
+        android:gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/financial_warquee_amount_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/gold13"
+        android:textSize="@dimen/common_text_size12"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_5_dip"
+        android:layout_toRightOf="@+id/financial_warquee_content_tv"
+        android:gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/financial_warquee_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/gold13"
+        android:textSize="@dimen/common_text_size12"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        />
+
+
+
+
+</RelativeLayout>

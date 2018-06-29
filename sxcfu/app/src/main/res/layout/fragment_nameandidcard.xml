@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graybg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white0"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_7_dip"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45_dip"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            >
+
+            <TextView
+                android:layout_width="@dimen/dimen_50_dip"
+                android:layout_height="match_parent"
+                android:text="@string/namecertification_name"
+                android:textColor="@color/colorBack3"
+                android:textSize="@dimen/common_text_size15"
+                android:gravity="center_vertical"
+                />
+
+            <EditText
+                android:id="@+id/nameandidcard_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/common_text_size14"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:hint="@string/openshbankaccount_name_hint"
+                android:textColorHint="@color/gray3"
+                android:textCursorDrawable="@null"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:singleLine="true"
+                />
+
+        </LinearLayout>
+
+        <include layout="@layout/view_interval_line_item"></include>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45_dip"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dimen_15_dip"
+            >
+
+            <TextView
+                android:layout_width="@dimen/dimen_50_dip"
+                android:layout_height="match_parent"
+                android:text="@string/namecertification_idcard"
+                android:textColor="@color/colorBack3"
+                android:textSize="@dimen/common_text_size15"
+                android:gravity="center_vertical"
+                />
+
+            <EditText
+                android:id="@+id/nameandidcard_idcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:textSize="@dimen/common_text_size14"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:hint="@string/openshbankaccount_idcard_hint"
+                android:textCursorDrawable="@null"
+                android:textColorHint="@color/gray3"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/namecertification_next_btn"
+        style="@style/login_reigster_btn_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/namecertification_next_tv"
+        android:enabled="false"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen_50_dip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_text_size16"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/notication_iv"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/openshbankaccount_notication_title"
+            android:textColor="@color/colorBack3"
+            android:textSize="@dimen/common_text_size13"
+            android:layout_marginLeft="@dimen/dimen_2_dip"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入本人真实姓名及身份证信息,实名信息一旦确认,无法更改."
+        android:textColor="@color/gray13"
+        android:textSize="@dimen/common_text_size12"
+        android:layout_marginTop="@dimen/dimen_7_dip"
+        android:layout_marginLeft="@dimen/dimen_14_dip"
+        android:layout_marginRight="@dimen/dimen_14_dip"
+        />
+
+
+
+</LinearLayout>

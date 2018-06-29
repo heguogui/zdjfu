@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dimen_10_dip"
+    >
+
+    <ImageView
+        android:id="@+id/partycenter_item_image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_150_dip"
+        android:src="@drawable/ic_launcher"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            >
+            <ImageView
+                android:layout_width="@dimen/dimen_20_dip"
+                android:layout_height="@dimen/dimen_20_dip"
+                android:src="@drawable/ic_launcher"
+                />
+            <TextView
+                android:id="@+id/partycenter_item_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBack3"
+                android:textSize="@dimen/common_text_size16"
+                android:gravity="center"
+                android:text="活动倒计时32天"
+                android:paddingTop="@dimen/dimen_10_dip"
+                android:paddingBottom="@dimen/dimen_10_dip"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/partycenter_item_oldparty_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBack3"
+            android:textSize="@dimen/common_text_size16"
+            android:gravity="center"
+            android:text="@string/partycenter_item_oldparty_title"
+            android:paddingTop="@dimen/dimen_10_dip"
+            android:paddingBottom="@dimen/dimen_10_dip"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
